@@ -1,13 +1,19 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Megha Mahapatra - UX/UI Designer</title>
     <script src="https://kit.fontawesome.com/27a2d694d4.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
 </head>
 
 <body>
-
     <!-- Side Navigation -->
     <div class="sideNav">
         <div class="navItems"></div>
@@ -43,260 +49,447 @@
         </a>
     </div>
 
-    <div class="main">
+    <div class="container-lg main">
         <!-- Informed Traveler's Hero Section -->
         <div class="hero">
-            <img src="/images/IFT/The Informed Traveler Logo.png" alt="The Informed Traveler's logo, which has 'The Informed Traveler' in bold above an image of a silhouetted traveler sitting on a rock with their phone held in their hand with a blue map of the world in the background.">
+            <div class="iftLogo row justify-content-evenly">
+                <img class="col-lg-3" src="/images/IFT/The Informed Traveler Logo.png" alt="The Informed Traveler's logo, which has 'The Informed Traveler' in bold above an image of a silhouetted traveler sitting on a rock with their phone held in their hand with a blue map of the world in the background.">                
+            </div>
 
-            <div class="heroIntro">
-                <div class="heroProblem">
-                    <h5>Problem:</h5>
+            <div class="row heroIntro">
+                <div class="col-lg-8 offset-lg-2">
+                    <h5><b>Problem:</b></h5>
 
                     <p>Quarantining during the coronavirus pandemic reminds me about how much I miss traveling and how life can be short. Why not create an efficient travel planning mobile app for today’s tourists to make the most of their time traveling?</p>
                 </div>
 
-                <div class="heroProblem">
-                    <h5>Deliverables:</h5>
+                <div class="col-lg-8 offset-lg-2">
+                    <h5><b>Deliverables:</b></h5>
 
                     <p>User Personas, Empathy Map, Affinity Diagram, Competitor Analysis, Storyboard, User Flow, Wireframes, Prototypes</p>
                 </div>
 
-                <div class="heroProblem">
-                    <h5>My Role:</h5>
+                <div class="col-lg-8 offset-lg-2">
+                    <h5><b>My Role:</b></h5>
 
                     <p>UX Designer</p>
                 </div>
 
-                <div class="heroProblem">
-                    <h5>Timeline:</h5>
+                <div class="col-lg-8 offset-lg-2">
+                    <h5><b>Timeline:</b></h5>
 
                     <p>August - September 2020</p>
                 </div>
             </div>
         </div>
 
+
+
         <!-- Introduction -->
         <div class="intro">
-            <img src="/images/IFT/IFT Middle Aligned Hero.png" alt="Image of a hand holding a phone with the splash screen of The Informed Traveler displayed.">
+            <img class="row img-fluid heroImage" src="/images/IFT/IFT Middle Aligned Hero.png" alt="Image of a hand holding a phone with the splash screen of The Informed Traveler displayed.">
 
-            <p>Traveling has been on my mind shortly since I started quarantining at home, so I wanted to design a new travel app to help fellow travelers easily plan their travels after the pandemic ends. I will use the following process to design this app in four weeks (as this was my first design project, I followed this process very linearly):</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Traveling has been on my mind shortly since I started quarantining at home, so I wanted to design a new travel app to help fellow travelers easily plan their travels after the pandemic ends. I will use the following process to design this app in four weeks (as this was my first design project, I followed this process very linearly):</p>
 
-            <img src="/images/IFT/Design Process - IFT.png" alt="A diagram showing the design process I followed. The process begins with user research, which is represented by an icon of a person, to defining a problem, which is represented by a magnifying glass icon, to ideating a solution, represented by a lightbulb icon, to prototyping, represented by a mobile phone icon, and finally, to testing, which is represented by an icon of a comment bubble with ellipses in it.">
+                <img class="col-lg-8 offset-lg-2 imageNoCaption" src="/images/IFT/Design Process - IFT.png" alt="A diagram showing the design process I followed. The process begins with user research, which is represented by an icon of a person, to defining a problem, which is represented by a magnifying glass icon, to ideating a solution, represented by a lightbulb icon, to prototyping, represented by a mobile phone icon, and finally, to testing, which is represented by an icon of a comment bubble with ellipses in it.">
 
-            <p>First, I needed to understand what troubles and emotions travelers were having during their planning process by conducting user interviews. I also wanted to ask about what apps or tools they were using for planning, so I could get an idea of what competitor travel apps were doing right and places where they could improve.</p>
+                <p class="col-lg-8 offset-lg-2">First, I needed to understand what troubles and emotions travelers were having during their planning process by conducting user interviews. I also wanted to ask about what apps or tools they were using for planning, so I could get an idea of what competitor travel apps were doing right and places where they could improve.</p>
 
-            <p>With four weeks to complete my design, I took off to do user research.</p>
+                <p class="col-lg-8 offset-lg-2">With four weeks to complete my design, I took off to do user research.</p>
+            </div>
+
         </div>
+
+
 
         <!-- User Research -->
         <div class="userResearch">
-            <div class="caseHeading">
-                <h3>User Research</h3>
+            <div class="row iftHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>User Research</h3>
+                </div>                
             </div>
 
+
             <!-- User Interview Planning -->
-            <p>To understand my users, I had decided to ask the following questions:</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">To understand my users, I had decided to ask the following questions:</p>
+            </div>
 
-            <ol>
-                <li>Recall the last trip you had and tell me about it.</li>
+            <div class="row caseList">
+                <ol class="col-lg-8 offset-lg-2">
+                    <li>Recall the last trip you had and tell me about it.</li>
 
-                <li>Do you recall how you planned for that trip?</li>
+                    <li>Do you recall how you planned for that trip?</li>
 
-                <li>Why did you go to specific stops on that trip?</li>
+                    <li>Why did you go to specific stops on that trip?</li>
 
-                <li>What tools or methods did you use to plan?</li>
+                    <li>What tools or methods did you use to plan?</li>
 
-                <li>How did you feel during the travel planning process?</li>
+                    <li>How did you feel during the travel planning process?</li>
 
-                <li>What was the hardest part about planning?</li>
+                    <li>What was the hardest part about planning?</li>
 
-                <li>What did you enjoy the most about planning?</li>
+                    <li>What did you enjoy the most about planning?</li>
 
-                <li>How did you prioritize where you planned to travel to?</li>
+                    <li>How did you prioritize where you planned to travel to?</li>
 
-                <li>How effective was your plan?</li>
+                    <li>How effective was your plan?</li>
 
-                <li>Is there anything you could have done to improve your planning process?</li>
-            </ol>
+                    <li>Is there anything you could have done to improve your planning process?</li>
+                </ol>
+            </div>
 
-            <p>I should note that I checked if my interviewees had at least one traveling experience in the past couple of years for a better understanding of how today’s travelers planned.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">I should note that I checked if my interviewees had at least one traveling experience in the past couple of years for a better understanding of how today’s travelers planned.</p>
+            </div>
+
 
 
             <!-- User Interviews and Survey -->
-            <p>From interviewing five travelers, who were all college age students in their early 20’s, I found that they had a common need of wanting to visit unique, local-recommended places in order to avoid the same three to ten popular tourist attractions that were often over-hyped on the internet. Four out of five of my travelers planned trips based on word-of-mouth from other tourists who had been to the area or by asking locals, such as Airbnb hosts, what destinations they recommended. Most of my travelers wished that they could have planned their travels to be more efficient about transportation time between tourist spots.</p>
-
-            <div class="userQuotes">
-                <p class="quote"><i>“We actually ended up going to a snowboarding resort thanks to our Airbnb host’s suggestion. That same Airbnb host recommended this fairly unknown underground garden, which was a really cool find.”</i>- Andrew, 21</p>
-
-                <p class="quote"><i>“The beach that we went to did not seem to live up to the reviews...I think the reviews kind of overhyped the beach. It took, like, two hours to get there.”</i>- Nam, 22</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">From interviewing five travelers, who were all college age students in their early 20’s, I found that they had a common need of wanting to visit unique, local-recommended places in order to avoid the same three to ten popular tourist attractions that were often over-hyped on the internet. Four out of five of my travelers planned trips based on word-of-mouth from other tourists who had been to the area or by asking locals, such as Airbnb hosts, what destinations they recommended. Most of my travelers wished that they could have planned their travels to be more efficient about transportation time between tourist spots.</p>
             </div>
 
-            <p>I also surveyed 17 travelers to learn about their travel planning pains and planning tools that they used. The survey results reveal that the most frustrating pain point is paying for expensive tourist attractions. Most of the people surveyed used Google Maps, Reddit, and Yelp in order to plan their trips.</p>
+            <div class="userQuotes row d-flex justify-content-evenly">
+                <p class="quote col-lg-3 text-center"><i>“We actually ended up going to a snowboarding resort thanks to our Airbnb host’s suggestion. That same Airbnb host recommended this fairly unknown underground garden, which was a really cool find.”</i>- Andrew, 21</p>
 
-            <div class="iftBarGraph">
-                <img src="/images/IFT/IFT Survey - Traveling Apps Used.png" alt="Bar graph of the travel apps that travelers surveyed use">
+                <p class="quote col-lg-3 text-center"><i>“The beach that we went to did not seem to live up to the reviews...I think the reviews kind of overhyped the beach. It took, like, two hours to get there.”</i>- Nam, 22</p>
+            </div>
+
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">I also surveyed 17 travelers to learn about their travel planning pains and planning tools that they used. The survey results reveal that the most frustrating pain point is paying for expensive tourist attractions. Most of the people surveyed used Google Maps, Reddit, and Yelp in order to plan their trips.</p>
+            </div>
+
+
+            <div class="iftBarGraph row justify-content-evenly">
+                <img class="col-lg-6" src="/images/IFT/IFT Survey - Traveling Apps Used.png" alt="Bar graph of the travel apps that travelers surveyed use">
 
                 <p class="caption">A bar graph of all the websites and apps used to plan travels</p>
             </div>
 
-            <div class="iftPieChart">
-                <img src="/images/IFT/IFT Survey - Frustrating Parts About Traveling.png" alt="Most frustrating parts about planning travels according to our users">
+            <div class="iftPieChart row justify-content-evenly">
+                <img class="col-lg-6" src="/images/IFT/IFT Survey - Frustrating Parts About Traveling.png" alt="Most frustrating parts about planning travels according to our users">
 
                 <p class="caption">A pie chart of the most headache-inducing part about planning travels</p>
             </div>
 
 
             <!-- User Persona -->
-            <p>Meeting my interviewees and studying the survey results helped me envision the traveler that I was designing for. Someone who is very smart and savvy about their time...</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Meeting my interviewees and studying the survey results helped me envision the traveler that I was designing for. Someone who is very smart and savvy about their time...</p>
+            </div>
 
-            <div class="iftPersona">
-                <img src="/images/IFT/IFT-user-persona.PNG" alt="A graphic with an image of Miriam Garcia, our persona.">
+            <div class="iftPersona row justify-content-evenly">
+                <img class="col-lg-6" src="/images/IFT/IFT-user-persona.PNG" alt="A graphic with an image of Miriam Garcia, our persona.">
 
                 <p class="caption">My user persona for the Informed Traveler, Miriam Garcia</p>
             </div>
 
-            <p>Someone like Miriam Garcia. She’s a sharp, bright master’s graduate who is planning a refreshing break in Costa Rica before pursuing a PhD. Miriam knows a tourist trap when she sees one online, and nothing annoys her more than spending a few hours searching for unique traveling experiences only to be repeatedly recommended the same ten tourist traps.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Someone like Miriam Garcia. She’s a sharp, bright master’s graduate who is planning a refreshing break in Costa Rica before pursuing a PhD. Miriam knows a tourist trap when she sees one online, and nothing annoys her more than spending a few hours searching for unique traveling experiences only to be repeatedly recommended the same ten tourist traps.</p>
 
-            <p>With Miriam here, I could now start to define a problem specific to her for my app to solve.</p>
+                <p class="col-lg-8 offset-lg-2">With Miriam here, I could now start to define a problem specific to her for my app to solve.</p>
+            </div>
 
         </div>
+
+
 
         <!-- Definition -->
         <div class="definition">
-            <div class="caseHeading">
-                <h3>Definition</h3>
+            <div class="row iftHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Definition</h3>
+                </div>
             </div>
 
-            <p>Miriam can easily plan which stops she wishes to make on her trips with the aid of search engines and reviews online, but only the most popular tourist attractions show up in the results or are recommended by other travelers, which causes Miriam great frustration. I need to give Miriam an easier way to view authentic, local-approved traveling experiences without having to dig through the internet to find them.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Miriam can easily plan which stops she wishes to make on her trips with the aid of search engines and reviews online, but only the most popular tourist attractions show up in the results or are recommended by other travelers, which causes Miriam great frustration. I need to give Miriam an easier way to view authentic, local-approved traveling experiences without having to dig through the internet to find them.</p>
+            </div>
 
-            <p><b>How might I create a travel planning app so that travelers can easily and quickly find authentic experiences that fit within their budget and vacation time?</b></p>
+            <div class="row d-flex justify-content-evenly">
+                <p class="boldDefinition col-lg-6"><b>How might I create a travel planning app so that travelers can easily and quickly find authentic experiences that fit within their budget and vacation time?</b></p>
+            </div>
+
         </div>
+
+
 
         <!-- Ideation -->
         <div class="ideation">
-            <div class="caseHeading">
-                <h3>Ideation</h3>
+            <div class="row iftHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Ideation</h3>
+                </div>
             </div>
 
-            <!-- Value Proposition -->
-            <p>Now that I have formed Miriam’s problem into an actionable statement, I could begin to come up with ideas for my travel app. First, I wanted to reaffirm Miriam’s needs and what my travel app could offer to meet them.</p>
 
-            <div class="iftValueProp">
-                <img src="/images/IFT/The Informed Traveler - Value Proposition Canvas.png" alt="A graphic showing how The Informed Traveler can meet Miriam's needs">
+            <!-- Value Proposition -->
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Now that I have formed Miriam’s problem into an actionable statement, I could begin to come up with ideas for my travel app. First, I wanted to reaffirm Miriam’s needs and what my travel app could offer to meet them.</p>
+            </div>
+
+            <div class="iftValueProp row d-flex justify-content-evenly">
+                <img class="col-lg-8" src="/images/IFT/The Informed Traveler - Value Proposition Canvas.png" alt="A graphic showing how The Informed Traveler can meet Miriam's needs">
 
                 <p class="caption">This value proposition canvas shows how we can meet the expectations and solve the frustrations of Miriam</p>
             </div>
 
-            <p>Around the time that I created this, I named my app The Informed Traveler as this app will serve as a one-stop shop to help travelers like Miriam find unique places to visit thanks to input from locals.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Around the time that I created this, I named my app The Informed Traveler as this app will serve as a one-stop shop to help travelers like Miriam find unique places to visit thanks to input from locals.</p>
 
-            <p>I took note of what other travel planning apps were doing well, such as the ability to see reviews from people who have been to a particular location like on Yelp or the ability to judge the quality of a comment based on the ratio of upvotes to downvotes it has as seen on Reddit. In addition, I also jotted down several features for The Informed Traveler that I thought Miriam would like, including the ability to see the safety rating of a location and the ability to sort travel destinations by personal preference.</p>
+                <p class="col-lg-8 offset-lg-2">I took note of what other travel planning apps were doing well, such as the ability to see reviews from people who have been to a particular location like on Yelp or the ability to judge the quality of a comment based on the ratio of upvotes to downvotes it has as seen on Reddit. In addition, I also jotted down several features for The Informed Traveler that I thought Miriam would like, including the ability to see the safety rating of a location and the ability to sort travel destinations by personal preference.</p>                
+            </div>
+
 
             <!-- Feature Prioritization Matrix -->
-            <p>After organizing these potential ideas based on what I thought would have the greatest impact on the user and would fit into the amount of time that I had given myself to design the app, I decided on designing a review system for travel destinations as well as a way to filter travel destinations by personal preferences.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">After organizing these potential ideas based on what I thought would have the greatest impact on the user and would fit into the amount of time that I had given myself to design the app, I decided on designing a review system for travel destinations as well as a way to filter travel destinations by personal preferences.</p>
+            </div>
 
-            <div class="iftFeaturePrioritization">
-                <img src="/images/IFT/The Informed Traveler - First Prioritization Matrix.png" alt="A graph showing all the features that I brainstormed for The Informed Traveler based on feedback that I received from my users. The features that I designed for are shown in a green dashed box.">
+            <div class="iftFeaturePrioritization row d-flex justify-content-evenly">
+                <img class="col-lg-8" src="/images/IFT/The Informed Traveler - First Prioritization Matrix.png" alt="A graph showing all the features that I brainstormed for The Informed Traveler based on feedback that I received from my users. The features that I designed for are shown in a green dashed box.">
 
                 <p class="caption">I focused my efforts on implementing the features within the green dashed line in the figure above</p>
             </div>
 
-            <!-- Miriam's Journey -->
-            <p>With a better sense of what my app should be able to provide to my users, I mapped out the journey that Miriam will take throughout The Informed Traveler.</p>
 
-            <div class="iftJourneyMap">
-                <img src="/images/IFT/IFT-Journey-Map.PNG" alt="A graphic showing Miriam's experience and feelings while using The Informed Traveler.">
+            <!-- Miriam's Journey -->
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">With a better sense of what my app should be able to provide to my users, I mapped out the journey that Miriam will take throughout The Informed Traveler.</p>
+            </div>
+
+
+            <div class="iftJourneyMap row d-flex justify-content-evenly">
+                <img class="col-lg-8" src="/images/IFT/IFT-Journey-Map.PNG" alt="A graphic showing Miriam's experience and feelings while using The Informed Traveler.">
 
                 <p class="caption">The above diagram helps me envision Miriam's emotional journey through The Informed Traveler</p>
             </div>
 
-            <p>Miriam is searching for destinations in Costa Rica to visit, but she keeps finding the same top ten popular locations populating her search. She finds an ad for The Informed Traveler and decides to give it a try. Miriam finds that she can easily and quickly plan a trip filled with authentic experiences thanks to The Informed Traveler.</p>
-
-            <!-- User Flow -->
-            <p>In order to start prototyping, I translated Miriam’s journey through The Informed Traveler into a user flow.</p>
-
-            <div class="iftUserFlow">
-                <img src="/images/IFT/IFT-User-Flow-1.PNG" alt="Image showing the user flow for The Informed Traveler">
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Miriam is searching for destinations in Costa Rica to visit, but she keeps finding the same top ten popular locations populating her search. She finds an ad for The Informed Traveler and decides to give it a try. Miriam finds that she can easily and quickly plan a trip filled with authentic experiences thanks to The Informed Traveler.</p>
             </div>
 
-            <p>In order to start prototyping, I translated Miriam’s journey through The Informed Traveler into a user flow. As detailed in the flow, Miriam will be able to</p>
 
-            <ul>
-                <li>Create an account to keep track of her travel plans</li>
+            <!-- User Flow -->
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">In order to start prototyping, I translated Miriam’s journey through The Informed Traveler into a user flow.</p>
+            </div>
 
-                <li>Search and filter destinations to add to a travel plan</li>
+            <div class="iftUserFlow row d-flex justify-content-evenly">
+                <img class="col-lg-8 imageNoCaption" src="/images/IFT/IFT-User-Flow-1.PNG" alt="Image showing the user flow for The Informed Traveler">
+            </div>
 
-                <li>Write a review for a destination she has been to</li>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">In order to start prototyping, I translated Miriam’s journey through The Informed Traveler into a user flow. As detailed in the flow, Miriam will be able to</p>
 
-                <li>View reviews from other travelers for any destination</li>
+                <ul class="caseList col-lg-8 offset-lg-2">
+                    <li>Create an account to keep track of her travel plans</li>
 
-                <li>View her travel plans</li>
+                    <li>Search and filter destinations to add to a travel plan</li>
 
-                <li>Manage her account</li>
-            </ul>
+                    <li>Write a review for a destination she has been to</li>
+
+                    <li>View reviews from other travelers for any destination</li>
+
+                    <li>View her travel plans</li>
+
+                    <li>Manage her account</li>
+                </ul>                
+            </div>
+
         </div>
+
+
 
         <!-- Prototype -->
         <div class="prototype">
-            <div class="caseHeading">
-                <h3>Prototype</h3>
+            <div class="row iftHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Prototype</h3>
+                </div>
             </div>
 
-            <!-- Paper Prototypes -->
-            <p>I rapidly sketched The Informed Traveler’s screens on paper based on Miriam’s flow through the app that I had created.</p>
 
-            <div class="iftPaperPrototypes">
-                <div class="paper">
+            <!-- Paper Prototypes -->
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">I rapidly sketched The Informed Traveler’s screens on paper based on Miriam’s flow through the app that I had created.</p>
+            </div>
+
+
+            <div class="iftPaperPrototypes row d-flex justify-content-center">
+                <div class="paper col-lg-3 text-center">
                     <img src="/images/IFT/IFT - Paper Splash Screen.png" alt="A sketch on paper of The Informed Traveler's splash screen">
 
                     <p class="caption">A rough sketch of the first screen users are greeted with when using The Informed Traveler</p>
                 </div>
 
-                <div class="paper">
+                <div class="paper col-lg-3 text-center">
                     <img src="/images/IFT/IFT - Paper Explore Page.png" alt="A sketch on paper of the explore screen of The Informed Traveler">
 
                     <p class="caption">A rough draft of the home page screen which shows that the user is logged in and recommends locations to visit</p>
                 </div>
 
-                <div class="paper">
+                <div class="paper col-lg-3 text-center">
                     <img src="/images/IFT/IFT - Paper Filters.png" alt="A sketch on paper of the filters that a user can select to sort locations">
 
                     <p class="caption">A rough sketch of the filters used to sort for a user's personal preferences</p>
                 </div>
             </div>
 
-            <!-- Low-fi Prototype -->
-            <p>This first run of sketches passed user testing, so I jumped straight into creating a low-fi prototype for The Informed Traveler using Adobe XD.</p>
 
-            <div class="iftLow">
-                <img src="/images/IFT/IFT - Low Clickable.png" alt="You see this??? Make sure to replace this with the link to the prototype, ok?">
+            <!-- Low-fi Prototype -->
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">This first run of sketches passed user testing, so I jumped straight into creating a low-fi prototype for The Informed Traveler using Adobe XD.</p>
             </div>
 
-            <p>In these frames, I wanted to include an emoji feature for showing how travelers felt towards a location. After testing my low-fi prototype on some users, I found that the emoji reaction was extraneous and that users would rather just use the upvote/downvote system for showing appreciation of a location and leave a comment if they really felt strongly about a location.</p>
+            <div class="iftLow row justify-content-evenly">
+                <img class="col-lg-3 imageNoCaption" src="/images/IFT/IFT - Low Clickable.png" alt="You see this??? Make sure to replace this with the link to the prototype, ok?">
+            </div>
 
-            <p>Other popular feedback included users needing the ability to distinguish the filter button for sorting traveling destinations and the ability to distinguish comments made by travelers from comments made by locals.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">In these frames, I wanted to include an emoji feature for showing how travelers felt towards a location. After testing my low-fi prototype on some users, I found that the emoji reaction was extraneous and that users would rather just use the upvote/downvote system for showing appreciation of a location and leave a comment if they really felt strongly about a location.</p>
+
+                <p class="col-lg-8 offset-lg-2">Other popular feedback included users needing the ability to distinguish the filter button for sorting traveling destinations and the ability to distinguish comments made by travelers from comments made by locals.</p>
+            </div>
+
 
             <!-- Mid-fi / Final Prototype -->
-            <p>With this knowledge in mind, I revised my low-fi prototype to create the following mid-fidelity version.</p>
-
-            <div class="iftFinal">
-                <img src="/images/IFT/Framed Sign In.png" alt="REPLACE THIS ONE TOO, OKKKKK????">
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">With this knowledge in mind, I revised my low-fi prototype to create the following mid-fidelity version.</p>
             </div>
 
-            <p>As I was focused only on the UX aspect of designing The Informed Traveler and making sure that design solved Miriam’s problem I had defined, I considered my design finished for now.</p>
+            <div class="iftFinal row justify-content-evenly">
+                <img class="col-lg-3 imageNoCaption" src="/images/IFT/Framed Sign In.png" alt="REPLACE THIS ONE TOO, OKKKKK????">
+            </div>
+
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">As I was focused only on the UX aspect of designing The Informed Traveler and making sure that design solved Miriam’s problem I had defined, I considered my design finished for now.</p>
+            </div>
+
         </div>
+
+
 
         <!-- Reflection -->
         <div class="reflection">
-            <div class="caseHeading">
-                <h3>Reflection</h3>
+            <div class="row iftHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Reflection</h3>
+                </div>                
             </div>
 
-            <p>My takeaway from this experience is to not get caught up in feature creep, like allowing users to add an emoji reaction to a travel spot they had been to. I feel like I have spent a lot of time thinking about all the features that I could include in the app when I had already narrowed down that list based on feedback from user interviews and user testing. While making prototypes, I kept thinking of more features to place into the app, but I needed to focus more on the features prioritized.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">My takeaway from this experience is to not get caught up in feature creep, like allowing users to add an emoji reaction to a travel spot they had been to. I feel like I have spent a lot of time thinking about all the features that I could include in the app when I had already narrowed down that list based on feedback from user interviews and user testing. While making prototypes, I kept thinking of more features to place into the app, but I needed to focus more on the features prioritized.</p>
 
-            <p>For the future of The Informed Traveler, I may consider working on updating the UI of the app to give it more personality and enjoyment for the users.</p>
+                <p class="col-lg-8 offset-lg-2">For the future of The Informed Traveler, I may consider working on updating the UI of the app to give it more personality and enjoyment for the users.</p>
 
-            <p>For future projects, I will focus more on prioritized features. I will also try to remember to iterate as early and often as I can so that I do not get too caught up in one idea for a project.</p>
+                <p class="col-lg-8 offset-lg-2">For future projects, I will focus more on prioritized features. I will also try to remember to iterate as early and often as I can so that I do not get too caught up in one idea for a project.</p>
+            </div>
+
+
+            <div class="row">
+                <p class="thankYou">Thank you for reading!</p>
+            </div>
         </div>
+
+
+
+        <!-- Check Out Other Works and Stay Connected -->
+        <div class="caseClosed">
+            <div class="row">
+                <div class="caseHeading text-center">
+                    <h3>Check out my other works:</h3>
+                </div>
+            </div>
+
+
+            <!-- Other work cards -->
+            <div class="card closeCards yellowCard container" style="max-width: 43rem;">
+                <div class="row d-flex justify-content-evenly">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Website Redesign: Child Care (Florida Department of Children and Families)
+                        </h4>
+
+                        <p class="card-text"><b>Timeline:</b> January - February 2021</p>
+
+                        <p class="card-text"><b>Role:</b> UX Designer, Front-end Developer</p>
+
+                        <p class="card-text">Connecting parents and guardians of children to childcare providers with this online service</p>
+
+                        <a href="/childcare.html"><button class="yellowButton">See Case Study</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card closeCards purpleCard container" style="max-width: 43rem;">
+                <div class="row d-flex justify-content-evenly">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Mobile App Design: Edubeat
+                        </h4>
+
+                        <p class="card-text"><b>Timeline: </b>September - October 2020,<br>May - June 2021</p>
+
+                        <p class="card-text"><b>Role:</b> UX/UI Designer</p>
+
+                        <p class="card-text">Sing, learn, remember with this mobile music education app by creating study jingles</p>
+
+                        <a href="/edubeat.html"><button class="purpleButton">See Case Study</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="caseHeading text-center">
+                    <h3>Let's stay connected!</h3>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class= "contactInfo d-flex justify-content-evenly">
+                <div class= "email text-center">
+                    <h4>Email Me</h4>
+
+                    <i class= "fas fa-envelope faSize"></i>
+
+                    <br>
+
+                    <p><a href= "mailto:meg.maha@gmail.com">meg.maha@gmail.com</a></p>
+                </div>
+
+                <div class= "linkedIn text-center">
+                    <h4>LinkedIn</h4>
+
+                    <i class= "fab fa-linkedin faSize"></i>
+
+                    <br>
+
+                    <p><a href= "https://www.linkedin.com/in/meghamahapatra" target= "_blank">www.linkedin.com/in/meghamahapatra</a></p>
+                </div>
+        
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer container-fluid">
+            <div class="row d-flex justify-content-evenly align-items-center">
+                <div class="col copyright text-center">
+                    <p><i class="far fa-copyright"></i>2020 designed and coded by Megha Mahapatra</p>
+                </div>
+
+                <div class="col socials text-center">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/meghamahapatra" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/megham-cloud" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>        
 
     </div>
 
@@ -499,6 +692,7 @@
             </ul>
         </div>
     </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/index.js"></script>

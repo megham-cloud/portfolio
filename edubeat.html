@@ -1,9 +1,15 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Megha Mahapatra - UX/UI Designer</title>
     <script src="https://kit.fontawesome.com/27a2d694d4.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
 </head>
 
@@ -43,343 +49,496 @@
         </a>
     </div>
 
-    <div class="main">
+
+    <div class="container-lg main">
+
         <!-- Edubeat's Hero Section -->
         <div class="hero">
-            <img src="/images/EB/Edubeat Logo.png" alt="Edubeat's logo, which is an image of the word 'edubeat' in orange with a black record disc that has a light blue center.">
+            <div class="edubeatLogo row justify-content-evenly">
+                <img class="col-lg-3" src="/images/EB/Edubeat Logo.png" alt="Edubeat's logo, which is an image of the word 'edubeat' in orange with a black record disc that has a light blue center.">
+            </div>
 
-            <div class="heroIntro">
-                <div class="heroProblem">
-                    <h5>Problem:</h5>
+            <div class="row heroIntro">
+                <div class="col-lg-8 offset-lg-2">
+                    <h5><b>Problem:</b></h5>
 
                     <p>Most of us prefer to remember the alphabet by singing our ABCs. Why did we stop using songs to memorize content? A team of two other designers and I designed a mobile app to help learners enjoy creating study jingles.</p>
                 </div>
 
-                <div class="heroProblem">
-                    <h5>Deliverables:</h5>
+                <div class="col-lg-8 offset-lg-2">
+                    <h5><b>Deliverables:</b></h5>
 
                     <p>User Interviews, User Persona, Feature Prioritization, Storyboarding, User Flow, Wireframes, Prototypes, UI Style Guide</p>
                 </div>
 
-                <div class="heroProblem">
-                    <h5>My Role:</h5>
+                <div class="col-lg-8 offset-lg-2">
+                    <h5><b>My Role:</b></h5>
 
                     <p>UX/UI Designer</p>
                 </div>
 
-                <div class="heroProblem">
-                    <h5>Timeline:</h5>
+                <div class="col-lg-8 offset-lg-2">
+                    <h5><b>Timeline:</b></h5>
 
-                    <p>September - October 2020,<br>May - June 2021</p>
+                    <p>September - October 2020, May - June 2021</p>
                 </div>
             </div>
         </div>
 
+
+
         <!-- Introduction -->
         <div class="intro">
-            <img src="/images/EB/Edubeat - Introduction Image Desktop.png" alt="An iPhone 12 with Edubeat's splash screen on top of a wooden desk background. This iPhone is surrounded by a notebook with flowers on its cover, a yellow candle, a sky blue circular mat, a dark blue pen, and a pink stick note pad.">
+            <img class="row img-fluid heroImage" src="/images/EB/Edubeat - Introduction Image Desktop.png" alt="An iPhone 12 with Edubeat's splash screen on top of a wooden desk background. This iPhone is surrounded by a notebook with flowers on its cover, a yellow candle, a sky blue circular mat, a dark blue pen, and a pink stick note pad.">
 
-            <p>Today’s students often get distracted watching entertainment apps like TikTok and Netflix instead of studying. Inspired by TikTok’s bite-sized yet memorable videos that are often accompanied by catchy song bits, my team and I wanted to design a music and education app to help students have fun studying by creating study jingles. Our app would be named Edubeat (to help students “beat” education by using music). We gave ourselves a timeline of three weeks to create this app using the following process:</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Today’s students often get distracted watching entertainment apps like TikTok and Netflix instead of studying. Inspired by TikTok’s bite-sized yet memorable videos that are often accompanied by catchy song bits, my team and I wanted to design a music and education app to help students have fun studying by creating study jingles. Our app would be named Edubeat (to help students “beat” education by using music). We gave ourselves a timeline of three weeks to create this app using the following process:</p>
+            </div>
 
-            <img src="/images/EB/Design Process - Edubeat.png" alt="A diagram showing the design process I followed. The process begins with user research, which is represented by an icon of a person, to defining a problem, which is represented by a magnifying glass icon, to ideating a solution, represented by a lightbulb icon, to prototyping, represented by a mobile phone icon, and finally, to testing, which is represented by an icon of a comment bubble with ellipses in it.">
+            <div class="row">
+                <img class="col-lg-8 offset-lg-2 imageNoCaption" src="/images/EB/Design Process - Edubeat.png" alt="A diagram showing the design process I followed. The process begins with user research, which is represented by an icon of a person, to defining a problem, which is represented by a magnifying glass icon, to ideating a solution, represented by a lightbulb icon, to prototyping, represented by a mobile phone icon, and finally, to testing, which is represented by an icon of a comment bubble with ellipses in it.">
+            </div>
+            
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">In order to proceed any further, we needed to understand the student we were designing for. How would they feel about creating study jingles? What daunts them about creating music to study? Have they even considered using music as a study method? We needed to conduct user research!</p>
+            </div>
 
-            <p>In order to proceed any further, we needed to understand the student we were designing for. How would they feel about creating study jingles? What daunts them about creating music to study? Have they even considered using music as a study method? We needed to conduct user research!</p>
         </div>
+
+
 
         <!-- User Research -->
         <div class="userResearch">
-            <div class="caseHeading">
-                <h3>User Research</h3>
+            <div class="row eduHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>User Research</h3>
+                </div>                
             </div>
 
+
             <!-- User Interview Planning -->
-            <p>With the above questions in mind, I created the following list of questions to ask five students:</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">With the above questions in mind, I created the following list of questions to ask five students:</p>                
+            </div>
 
-            <ol>
-                <li>What do people currently use when using music as a learning tool?</li>
+            <div class="row caseList">
+                <ol class="col-lg-8 offset-lg-2">
+                    <li>What do people currently use when using music as a learning tool?</li>
 
-                <li>How are people making decisions when using education apps?</li>
+                    <li>How are people making decisions when using education apps?</li>
 
-                <li>What experiences have people had while using music as a learning tool?</li>
+                    <li>What experiences have people had while using music as a learning tool?</li>
 
-                <li>How do people feel when they use music as a learning tool?</li>
-            </ol>
+                    <li>How do people feel when they use music as a learning tool?</li>
+                </ol>                
+            </div>
+
 
             <!-- Survey -->
-            <p>However, I withheld from asking these questions after reviewing them with my other team members. Just think, how many students do you know of who actually use music as a learning tool?</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">However, I withheld from asking these questions after reviewing them with my other team members. Just think, how many students do you know of who actually use music as a learning tool?</p>            
+            </div>
 
-            <p>We didn’t think there were many, but to test our assumption, we conducted a survey asking learners if they have used music as a study tool and would be interested in creating music.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">We didn’t think there were many, but to test our assumption, we conducted a survey asking learners if they have used music as a study tool and would be interested in creating music.</p>
+            </div>
 
-            <div class="ebPieChart">
-                <img src="/images/EB/Edubeat_Survey_Pie_Chart.jpg" alt="A pie chart titled 'Best Methods to Recall Information'. There are 60 total responses. There are five sections to this pie chart: 'Writing It Down' (representing a red section of the chart) with 32 responses, 'Singing a Jingle' (representing an orange section of the chart) with 8 responses, 'Repetitive Studying' (representing a light blue section of the chart) with 18 responses, 'Teaching' (representing a tan colored section of the chart) with 1 response, and 'Reading Out Loud' (representing a yellow colored section of the chart) with 1 response.">
+            <div class="ebPieChart row justify-content-evenly">
+                <img class="col-lg-6" src="/images/EB/Edubeat_Survey_Pie_Chart.jpg" alt="A pie chart titled 'Best Methods to Recall Information'. There are 60 total responses. There are five sections to this pie chart: 'Writing It Down' (representing a red section of the chart) with 32 responses, 'Singing a Jingle' (representing an orange section of the chart) with 8 responses, 'Repetitive Studying' (representing a light blue section of the chart) with 18 responses, 'Teaching' (representing a tan colored section of the chart) with 1 response, and 'Reading Out Loud' (representing a yellow colored section of the chart) with 1 response.">
 
                 <p class="caption">Only 8 out of the 60 learners surveyed found singing a jingle the best way to retain information</p>
             </div>
 
-            <p>As our survey revealed, the answer is not many people consider using music as a study tool. With this information in mind, we revised the interview questions. What could be blocking students from using music as a studying tool? Also, how do they prefer to study and what apps do they use to do so? We could really learn from what other education apps are doing correctly for our users.</p>
-
-            <!-- Interview and Survey Results -->
-            <p>Five interviews later, we found that our students revealed that they hadn’t considered creating songs to use as study material due to how time consuming and complex they believe creating songs would be. Despite this fact, several of our interviewees were interested in using an app that would make creating study music easier.</p>
-
-            <p>We also learned that most of our users were using education apps like Quizlet to easily create virtual flashcards and Notability to review their notes. Our students appreciated the ease of using Quizlet and the personability of Notability. Perhaps we could incorporate these elements into Edubeat…</p>
-
-            <div class="userQuotes">
-                <p class="quote"><i>"Have you ever tried opening a music software?? Those are so messy to look at... A music education app sounds cool though"</i> - Jess, 24</p>
-
-                <p class="quote"><i>"It's like TikTok but for education? Sounds interesting, I'd check it out."</i> - Abby, 22</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">As our survey revealed, the answer is not many people consider using music as a study tool. With this information in mind, we revised the interview questions. What could be blocking students from using music as a studying tool? Also, how do they prefer to study and what apps do they use to do so? We could really learn from what other education apps are doing correctly for our users.</p>
             </div>
 
-            <p>Ideally, we would want Edubeat to cater to learners of all ages, but then we wouldn’t be able to start solutioning with so many types of users in mind and with our limited time frame. Thanks to our user interviews, which were mainly performed on students in college, and my teammates’ empathy map, we narrowed down on a persona.</p>
+
+            <!-- Interview and Survey Results -->
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Five interviews later, we found that our students revealed that they hadn’t considered creating songs to use as study material due to how time consuming and complex they believe creating songs would be. Despite this fact, several of our interviewees were interested in using an app that would make creating study music easier.</p>
+            </div>
+
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">We also learned that most of our users were using education apps like Quizlet to easily create virtual flashcards and Notability to review their notes. Our students appreciated the ease of using Quizlet and the personability of Notability. Perhaps we could incorporate these elements into Edubeat…</p>
+            </div>
+
+            <div class="userQuotes row d-flex justify-content-evenly">
+                <p class="quote col-lg-3 text-center"><i>"Have you ever tried opening a music software?? Those are so messy to look at... A music education app sounds cool though"</i> - Jess, 24</p>
+
+                <p class="quote col-lg-3 text-center"><i>"It's like TikTok but for education? Sounds interesting, I'd check it out."</i><br><br>- Abby, 22</p>
+            </div>
+
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Ideally, we would want Edubeat to cater to learners of all ages, but then we wouldn’t be able to start solutioning with so many types of users in mind and with our limited time frame. Thanks to our user interviews, which were mainly performed on students in college, and my teammates’ empathy map, we narrowed down on a persona.</p>                
+            </div>
+
 
             <!-- Empathy Map and User Persona -->
             <div class="ebEmpathyPersona">
-                <div class="ebEmpathyMap">
-                    <img src="/images/EB/Edubeat - Empathy Map.png" alt="Empathy map exploring what Gina thinks, feels, sees, says, and does in regards to studying. Her pains about studying and gains that could be made are also listed.">
+                <div class="ebEmpathyMap row justify-content-evenly">
+                    <img class="col-lg-8" src="/images/EB/Edubeat - Empathy Map.png" alt="Empathy map exploring what Gina thinks, feels, sees, says, and does in regards to studying. Her pains about studying and gains that could be made are also listed.">
 
                     <p class="caption">My teammate's empathy map, populated by the thoughts and feelings of our interviewees</p>
                 </div>
 
-                <div class="ebPersona">
-                    <img src="/images/EB/Edubeat - User Persona.png" alt="A graphic with an image of Gina, our persona. This graphic lists the age (22) and occupation (full-time college student, part-time bartender) of Gina, while also exploring her goals, frustrations, interests, skills, and study apps that she uses.">
+                <div class="ebPersona row justify-content-evenly">
+                    <img class="col-lg-8" src="/images/EB/Edubeat - User Persona.png" alt="A graphic with an image of Gina, our persona. This graphic lists the age (22) and occupation (full-time college student, part-time bartender) of Gina, while also exploring her goals, frustrations, interests, skills, and study apps that she uses.">
 
                     <p class="caption">Gina, our user persona, is bored out of her mind from studying for college</p>
                 </div>
             </div>
 
-            <p>Introducing Gina. She’s a part-time college student who also works a part-time job as a bartender. Gina has a hard time remembering the recipe for a drink for her job. She always finds herself procrastinating by scrolling through Instagram and watching her TikTok feed instead.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Introducing Gina. She’s a part-time college student who also works a part-time job as a bartender. Gina has a hard time remembering the recipe for a drink for her job. She always finds herself procrastinating by scrolling through Instagram and watching her TikTok feed instead.</p>
+            </div>
 
-            <p>We can start forming Gina’s specific problem so we can help her. For instance, how could we help Gina study using Edubeat without sacrificing the fun she gets from entertainment apps?</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">We can start forming Gina’s specific problem so we can help her. For instance, how could we help Gina study using Edubeat without sacrificing the fun she gets from entertainment apps?</p>                
+            </div>
 
-            <p>It was time to define Gina’s problem.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">It was time to define Gina’s problem.</p>
+            </div>
 
         </div>
+
 
         <!-- Definition -->
         <div class="definition">
-            <div class="caseHeading">
-                <h3>Definition</h3>
+            <div class="row eduHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Definition</h3>
+                </div>
             </div>
 
-            <p>Gina's situation begged the question:</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Gina's situation begged the question:</p>
+            </div>
 
-            <p class="boldDefinition"><b>How might we design Gina’s experience so that she can retain and recall information that is studied, have a more efficient study session, and an overall more enjoyable and memorable experience?</b></p>
+            <div class="row d-flex justify-content-evenly">
+                <p class="boldDefinition col-lg-6"><b>How might we design Gina’s experience so that she can retain and recall information that is studied, have a more efficient study session, and an overall more enjoyable and memorable experience?</b></p>                
+            </div>
 
-            <p>With a clear problem to solution for, we started to plan the design of our music education app, Edubeat.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">With a clear problem to solution for, we started to plan the design of our music education app, Edubeat.</p>                
+            </div>
+
         </div>
+
+
 
         <!-- Ideation -->
         <div class="ideation">
-            <div class="caseHeading">
-                <h3>Ideation</h3>
+            <div class="row eduHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Ideation</h3>
+                </div>
             </div>
 
-            <p>To start answering our problem, one of my teammates mapped out what Gina’s journey through our app would look like.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">To start answering our problem, one of my teammates mapped out what Gina’s journey through our app would look like.</p>
+            </div>
+
 
             <!-- Journey Map -->
-            <div class="ebJourneyMap">
-                <img src="/images/EB/Edubeat - Journey Map@2x.png" alt="A journey map for Gina which shows her scenario, goals, experience, and feelings during her experience with making a study jingle using Edubeat. Opportunities for satisfying Gina are also explored.">
+            <div class="ebJourneyMap row d-flex justify-content-evenly">
+                <img class="col-lg-8" src="/images/EB/Edubeat - Journey Map@2x.png" alt="A journey map for Gina which shows her scenario, goals, experience, and feelings during her experience with making a study jingle using Edubeat. Opportunities for satisfying Gina are also explored.">
 
                 <p class="caption">Here's how Gina would feel while creating a jingle using Edubeat</p>
             </div>
 
-            <p>Supposing the case that Gina had multiple drinks to memorize the recipes for, we felt that Gina would feel overwhelmed with creating so many jingles. As luck would have it, someone may have already created a jingle for memorizing one of the drink formulas that Gina needs to know. To make Gina’s studying more efficient, we decided that her journey should include browsing other students’ jingles on our app.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Supposing the case that Gina had multiple drinks to memorize the recipes for, we felt that Gina would feel overwhelmed with creating so many jingles. As luck would have it, someone may have already created a jingle for memorizing one of the drink formulas that Gina needs to know. To make Gina’s studying more efficient, we decided that her journey should include browsing other students’ jingles on our app.</p>
+            </div>
+
 
             <!-- User Flow -->
-            <p>Keeping this journey map in mind along with inspiration from other education apps that our interviewees had mentioned (like Quizlet), I created a user flow along with one of my other teammates.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Keeping this journey map in mind along with inspiration from other education apps that our interviewees had mentioned (like Quizlet), I created a user flow along with one of my other teammates.</p>
+            </div>
 
-            <img src="/images/EB/Edubeat - User Flow.png" alt="A diagram showing the choices that Gina makes using Edubeat and the screens that she will reach">
+            <div class="eduUserFlow row d-flex justify-content-evenly">
+                <img class="col-lg-8" src="/images/EB/Edubeat - User Flow.png" alt="A diagram showing the choices that Gina makes using Edubeat and the screens that she will reach">                
+            </div>
 
-            <p>This flow shows how Gina can accomplish the following tasks:</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">This flow shows how Gina can accomplish the following tasks:</p>                
+            </div>
 
-            <ul>
-                <li>Create and sign in with an account</li>
+            <div class="row">
+                <ul class="caseList col-lg-8 offset-lg-2">
+                    <li>Create and sign in with an account</li>
 
-                <li>Create a study jingle</li>
+                    <li>Create a study jingle</li>
 
-                <li>Browse study jingles</li>
+                    <li>Browse study jingles</li>
 
-                <li>Access her jingle library</li>
+                    <li>Access her jingle library</li>
 
-                <li>Manage her profile</li>
-            </ul>
+                    <li>Manage her profile</li>
+                </ul>
+            </div>
 
-            <p>We decided that Gina should have her own personal library to keep track of the jingles she creates. We also wanted Gina to be able to manage her account to allow for some personability.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">We decided that Gina should have her own personal library to keep track of the jingles she creates. We also wanted Gina to be able to manage her account to allow for some personability.</p>                
+            </div>
 
-            <p>While creating our user flow, we briefly lost sight of Gina and her problem that we were solving. The way that we envisioned the jingle creation process would work, as detailed in the user flow above, begins with the following steps:</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">While creating our user flow, we briefly lost sight of Gina and her problem that we were solving. The way that we envisioned the jingle creation process would work, as detailed in the user flow above, begins with the following steps:</p>                
+            </div>
 
-            <ol>
-                <li>Choose the subject studied and the topic of that subject (Eg. If studying for a quiz on exponents, Math would be the subject and Algebra would be the topic)</li>
+            <div class="row">
+                <ol class="caseList col-lg-8 offset-lg-2">
+                    <li>Choose the subject studied and the topic of that subject (Eg. If studying for a quiz on exponents, Math would be the subject and Algebra would be the topic)</li>
 
-                <li>Title your jingle, Describe the purpose of the jingle, Enter lyrics for the jingle</li>
+                    <li>Title your jingle, Describe the purpose of the jingle, Enter lyrics for the jingle</li>
 
-                <li>Choose to either upload your own instrumental track to layer the lyrics on top of or choose form tracks available from Edubeat</li>
-            </ol>
+                    <li>Choose to either upload your own instrumental track to layer the lyrics on top of or choose form tracks available from Edubeat</li>
+                </ol>
+            </div>
 
-            <p>It is in this third step that my teammates and I saw an opportunity for another persona: a music composer who produces tracks for Edubeat to make available to users. This user would have the premium profile seen in the graphic above.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">It is in this third step that my teammates and I saw an opportunity for another persona: a music composer who produces tracks for Edubeat to make available to users. This user would have the premium profile seen in the graphic above.</p>                
+            </div>
 
-            <p>Since we did not have enough time to deal with this additional persona, we had to revise our user flow to fit just Gina’s needs.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Since we did not have enough time to deal with this additional persona, we had to revise our user flow to fit just Gina’s needs.</p>                
+            </div>
 
-            <div class="ebUserFlow">
-                <img src="/images/EB/Edubeat - User Flow.png" alt="Our final user flow">
+
+            <div class="row d-flex justify-content-evenly ebUserFlow">
+                <img class="col-lg-8" src="/images/EB/Edubeat - User Flow.png" alt="Our final user flow">
 
                 <p class="caption">We translated Gina's emotional journey through our app into the more defined flow above</p>
             </div>
         </div>
 
+
+
         <!-- Prototype -->
         <div class="prototype">
-            <div class="caseHeading">
-                <h3>Prototype</h3>
+            <div class="row eduHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Prototype</h3>
+                </div>
             </div>
 
-            <p>Once we overcame creating our user flow, we realized that we had only a couple of weeks left to produce a hi-fidelity prototype (we had started working on this project late September and wanted to finish by mid-October).</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Once we overcame creating our user flow, we realized that we had only a couple of weeks left to produce a hi-fidelity prototype (we had started working on this project late September and wanted to finish by mid-October).</p>                
+            </div>
 
-            <p>Normally I would rapidly produce a paper prototype to test on our users, but with the deadline approaching, I made low-fidelity wireframes to test on our users.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Normally I would rapidly produce a paper prototype to test on our users, but with the deadline approaching, I made low-fidelity wireframes to test on our users.</p>                
+            </div>
+
 
             <!-- Low-fi wireframes -->
             <h1>A PLACEHOLDER UNTIL LOW-FI WIREFRAMES LINK FOUND</h1>
 
-            <p>After testing our low-fi prototype, I created a list of feedback we had received from our users and reorganized them in order to figure out what issues we had to prioritize.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">After testing our low-fi prototype, I created a list of feedback we had received from our users and reorganized them in order to figure out what issues we had to prioritize.</p>                
+            </div>
+
 
             <!-- Testing Results -->
             <div class="ebLowTesting">
-                <div class="ebAffinityMap">
-                    <img src="/images/EB/Edubeat - Affinity Map.png" alt="A diagram categorizing user critique into three categories: Layout, Jingle Features, and Display">
+                <div class="ebAffinityMap row d-flex justify-content-evenly">
+                    <img class="col-lg-8" src="/images/EB/Edubeat - Affinity Map.png" alt="A diagram categorizing user critique into three categories: Layout, Jingle Features, and Display">
 
-                    <p class="caption">We found that our users had issues with the layout and display of our app. They also requested more features like sharing jingles.</p>
+                    <p class="caption col-lg-8">We found that our users had issues with the layout and display of our app. They also requested more features like sharing jingles.</p>
                 </div>
 
-                <div class="ebPrioritization">
-                    <img src="/images/EB/Edubeat - Prioritization Matrix.png" alt="A diagram organizing the results from the previous diagram based on how important they are to the users and our team">
+                <div class="ebPrioritization row d-flex justify-content-evenly">
+                    <img class="col-lg-8" src="/images/EB/Edubeat - Prioritization Matrix.png" alt="A diagram organizing the results from the previous diagram based on how important they are to the users and our team">
 
                     <p class="caption">We prioritized the features that both we and our users felt were important in the dashed yellow box</p>
                 </div>
             </div>
 
-            <p>As it turns out, our users wanted more interaction with the app by having lyrics highlighted while their study jingle was playing. Users also wanted to see the option for browsing other students’ jingles listed first on the home page so that users would be encouraged to save time studying by seeing if another learner had already created a jingle of the same study topic. Lastly, and most importantly, users were confused about the meaning of the text on certain buttons shown during the jingle creation process.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">As it turns out, our users wanted more interaction with the app by having lyrics highlighted while their study jingle was playing. Users also wanted to see the option for browsing other students’ jingles listed first on the home page so that users would be encouraged to save time studying by seeing if another learner had already created a jingle of the same study topic. Lastly, and most importantly, users were confused about the meaning of the text on certain buttons shown during the jingle creation process.</p>                
+            </div>
 
-            <div class="ebLowTestingEx">
-                <img src="/images/EB/Home.png" alt="The home screen of Edubeat, which lists the following buttons for the users to tap: Create a study jingle, Browse jingles, and Upload an instrumental track (in this order)">
+            <div class="ebLowTestingEx row d-flex justify-content-evenly">
+                <img class="col-lg-2" src="/images/EB/Home.png" alt="The home screen of Edubeat, which lists the following buttons for the users to tap: Create a study jingle, Browse jingles, and Upload an instrumental track (in this order)">
 
                 <p class="caption">Users wanted to see "Browse pre-made jingles" listed before "Create a study jingle!"</p>
             </div>
 
-            <!-- Final mid-fidelity prototype -->
-            <p>After fixing the latter two issues, we jumped into creating our hi-fi prototype in Adobe XD. With the deadline breathing down our necks, we decided to focus solely on the UX aspect of our app and leave the more visual UI side and micro interactions for a later time when we could all meet again.</p>
 
-            <div class="ebLowTestingEx">
-                <img src="/images/EB/Splash Screen.png" alt="The splash screen of Edubeat, which has 'Sign Up' and 'Log In' buttons">
+            <!-- Final mid-fidelity prototype -->
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">After fixing the latter two issues, we jumped into creating our hi-fi prototype in Adobe XD. With the deadline breathing down our necks, we decided to focus solely on the UX aspect of our app and leave the more visual UI side and micro interactions for a later time when we could all meet again.</p>
+            </div>
+
+            <div class="ebLowTestingEx row d-flex justify-content-evenly">
+                <img class="col-lg-3" src="/images/EB/Splash Screen.png" alt="The splash screen of Edubeat, which has 'Sign Up' and 'Log In' buttons">
 
                 <p class="caption">Our final prototype...for now</p>
             </div>
 
         </div>
 
+
+
         <!-- Reflection -->
         <div class="reflection">
-            <div class="caseHeading">
-                <h3>Reflection</h3>
+            <div class="row eduHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Reflection</h3>
+                </div>
             </div>
 
-            <p><b>Review of September - October 2020 session</b></p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2"><b>Review of September - October 2020 session</b></p>
+            </div>
 
-            <p>Considering that I had started my UX journey in early August of 2020, I’m really proud of how far I’ve come. I’m really proud of my two teammates as well and for their input in designing this app.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Considering that I had started my UX journey in early August of 2020, I’m really proud of how far I’ve come. I’m really proud of my two teammates as well and for their input in designing this app.</p>
+            </div>
 
-            <p>I do wish we could have randomly selected potential users to interview instead of friends or family we knew, but due to the coronavirus pandemic, we could not freely approach anyone to interview for us. Post covid, I would love to interview students that I don’t know in order to get more fresh input.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">I do wish we could have randomly selected potential users to interview instead of friends or family we knew, but due to the coronavirus pandemic, we could not freely approach anyone to interview for us. Post covid, I would love to interview students that I don’t know in order to get more fresh input.</p>
+            </div>
 
-            <p>Given more time and connections outside of people I know, I would have liked to design with an older learner persona in mind.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Given more time and connections outside of people I know, I would have liked to design with an older learner persona in mind.</p>
+            </div>
+
         </div>
+
+
 
         <!-- Updating the UI -->
         <div class="updatingUI">
-            <div class="caseHeading">
-                <h3>Updating the UI</h3>
+            <div class="row eduHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Updating the UI</h3>
+                </div>
             </div>
 
-            <p><b>May - June 2021,<br>The journey continues</b></p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2"><b>May - June 2021,<br>The journey continues</b></p>
+            </div>
 
-            <p>In May, one of my team members and I were finally able to resume working on Edubeat. For this two month period, we wanted to work on the user interface of our app as it was rather lacking…</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">In May, one of my team members and I were finally able to resume working on Edubeat. For this two month period, we wanted to work on the user interface of our app as it was rather lacking…</p>
+            </div>
 
-            <p>First, we gathered inspiration from retro images and old music equipment. We found that the nostalgic feel of retro imagery could make users recall fun times they had studying when they were younger and less jaded by years of school.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">First, we gathered inspiration from retro images and old music equipment. We found that the nostalgic feel of retro imagery could make users recall fun times they had studying when they were younger and less jaded by years of school.</p>                
+            </div>
+
 
             <!-- UI Inspiration -->
-            <div class="uiInspiration">
-                <img src="/images/EB/Edubeat Inspo - Home.png" alt="An image of the first page of our UI Inspiration.">
+            <div class="uiInspiration row d-flex justify-content-evenly">
+                <img class="col-lg-8" src="/images/EB/Edubeat Inspo - Home.png" alt="An image of the first page of our UI Inspiration.">
 
                 <p class="caption">
                     Retro images and colors galore called to Edubeat's old-school image
                 </p>
             </div>
 
-            <p>Fueled by our inspiration, we created the following style guide:</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Fueled by our inspiration, we created the following style guide:</p>
+            </div>
+
 
             <!-- Style Guide -->
-            <div class="uiStyleGuide">
-                <img src="/images/EB/Edubeat Style Tile.png" alt="An image of Edubeat's style guide">
+            <div class="uiStyleGuide row d-flex justify-content-evenly">
+                <img class="col-lg-8" src="/images/EB/Edubeat Style Tile.png" alt="An image of Edubeat's style guide">
 
                 <p class="caption">Retro images and colors galore called to Edubeat's old-school image</p>
             </div>
 
-            <p>I designed the buttons after rectangular push buttons on retro game consoles. As game consoles buttons are fun to use, we thought that users would find using the buttons enjoyable.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">I designed the buttons after rectangular push buttons on retro game consoles. As game consoles buttons are fun to use, we thought that users would find using the buttons enjoyable.</p>
+            </div>
+
 
             <!-- Main Navigation Fiasco -->
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Next came repainting the old colors with the new colors and buttons from our Style Guide. Besides these updates, we also wanted to redo our main navigation to fit with our retro theme. While my teammate added graphics and updated the typography of our app, I created a main navigation menu inspired by our logo of a record player.</p>
+            </div>
 
-            <p>Next came repainting the old colors with the new colors and buttons from our Style Guide. Besides these updates, we also wanted to redo our main navigation to fit with our retro theme. While my teammate added graphics and updated the typography of our app, I created a main navigation menu inspired by our logo of a record player.</p>
-
-            <div class="phoneDisplay">
-                <img src="/images/EB/Menu 1 - Home.png" alt="Image of a phone screen with our record player navigation on the bottom">
+            <div class="phoneDisplay row d-flex justify-content-evenly">
+                <img class="col-lg-3" src="/images/EB/Menu 1 - Home.png" alt="Image of a phone screen with our record player navigation on the bottom">
 
                 <p class="caption">Record main navigation menu is slick and fun, but at what cost?</p>
             </div>
 
-            <p>As my teammate had pointed out, the main navigation takes up almost a fourth of the user’s screen, which is edging too much into the limited space we have for Edubeat’s features. Although the record menu navigation was a cool idea, I agreed that it was rather overbearing. Another reminder that we must not get too attached to our ideas in the UX world…</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">As my teammate had pointed out, the main navigation takes up almost a fourth of the user’s screen, which is edging too much into the limited space we have for Edubeat’s features. Although the record menu navigation was a cool idea, I agreed that it was rather overbearing. Another reminder that we must not get too attached to our ideas in the UX world…</p>
+            </div>
 
-            <p>Instead, I created an equally fun cassette tape inspired main navigation menu that fit the retro theme while not over occupying space.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Instead, I created an equally fun cassette tape inspired main navigation menu that fit the retro theme while not over occupying space.</p>
+            </div>
 
-            <div class="phoneDisplay">
-                <img src="/images/EB/Menu Background – 1.png" alt="Image of the cassette tape main navigation">
+            <div class="phoneDisplay row d-flex justify-content-evenly">
+                <img class="col-lg-3" src="/images/EB/Menu Background – 1.png" alt="Image of the cassette tape main navigation">
 
                 <p class="caption">A much less space consuming, yet fun main navigation menu</p>
             </div>
 
-            <p>After applying our style guide and the buttons I had made to the last of our screens, we made our first version of an Edubeat hi-fi prototype.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">After applying our style guide and the buttons I had made to the last of our screens, we made our first version of an Edubeat hi-fi prototype.</p>
+            </div>
+
 
             <!-- Misunderstandings and Adding Animations -->
-            <p>Interviewing five more users revealed that most of them were confused about the meaning of the text on certain buttons and also desired more animations to better demonstrate the functionality of our app.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">Interviewing five more users revealed that most of them were confused about the meaning of the text on certain buttons and also desired more animations to better demonstrate the functionality of our app.</p>
+            </div>
 
-            <div class="phoneDisplay">
-                <img src="/images/EB/Jingle Creation - MG vs self upload – v4.png" alt="A screen of the 'premade' jingle misunderstanding, or is it?">
+            <div class="phoneDisplay row d-flex justify-content-evenly">
+                <img class="col-lg-3" src="/images/EB/Jingle Creation - MG vs self upload – v4.png" alt="A screen of the 'premade' jingle misunderstanding, or is it?">
 
                 <p class="caption">Users were confused about what exactly "premade" jingle meant. Was it a jingle they had already made, thus "premade"?</p>
             </div>
 
-            <p>With the button text changed, I focused on making Edubeat more enjoyable and memorable as we had defined in our problem by making animations that conveyed how the app would function.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">With the button text changed, I focused on making Edubeat more enjoyable and memorable as we had defined in our problem by making animations that conveyed how the app would function.</p>
+            </div>
 
-            <div class="phoneDisplay">
-                <img src="/images/EB/Jingle Creation - Start Recording - v4 – 11.png" alt="A screen showing the beginning of the recording process">
+
+            <div class="phoneDisplay row d-flex justify-content-evenly">
+                <img class="col-lg-3" src="/images/EB/Jingle Creation - Start Recording - v4 – 11.png" alt="A screen showing the beginning of the recording process">
 
                 <p class="caption">I finally added an animation that highlights scrolling lyrics while a track is played</p>
             </div>
 
-            <p>I finally followed up on creating an animation highlighting lyrics as they played in real time while a jingle is playing. Since Edubeat is designed like a music recording device, I made the lyrics player look like a VCR screen.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">I finally followed up on creating an animation highlighting lyrics as they played in real time while a jingle is playing. Since Edubeat is designed like a music recording device, I made the lyrics player look like a VCR screen.</p>
+            </div>
 
-            <p>After applying these changes, we had our latest version of our hi-fi prototype.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">After applying these changes, we had our latest version of our hi-fi prototype.</p>
+            </div>
 
-            <div class="phoneDisplay">
-                <img src="/images/EB/Splash Screen - v3 – 1.png" alt="An image of the splash screen of our final prototype">
+            <div class="phoneDisplay row d-flex justify-content-evenly">
+                <img class="col-lg-3" src="/images/EB/Splash Screen - v3 – 1.png" alt="An image of the splash screen of our final prototype">
 
                 <p class="caption">The latest version of our prototype for Edubeat</p>
             </div>
 
         </div>
 
+
+
         <!-- Next Steps -->
         <div class="nextSteps">
-            <div class="caseHeading">
-                <h3>Next Steps</h3>
+            <div class="row eduHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Next Steps</h3>
+                </div>
             </div>
 
-            <p>We pitched our latest version of the Edubeat prototype in the Next Level contest. (Youtube video below) Although we did not win the contest, we did receive feedback for Edubeat.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">We pitched our latest version of the Edubeat prototype in the Next Level contest. (Youtube video below) Although we did not win the contest, we did receive feedback for Edubeat.</p>
+            </div>
+
 
             <div class="youtubeVideo">
                 <h1>EMBED THE YOUTUBE VIDEO</h1>
@@ -387,21 +546,116 @@
                 <p class="caption">Our video pitch for Next Level</p>
             </div>
 
-            <p>For our next steps, we want to create a coded prototype of Edubeat and also consider updating Edubeat to include an older learner persona. We wish to continue working on Edubeat and pitching it in hopes that it will one day benefit learners everywhere.</p>
+            <div class="row">
+                <p class="col-lg-8 offset-lg-2">For our next steps, we want to create a coded prototype of Edubeat and also consider updating Edubeat to include an older learner persona. We wish to continue working on Edubeat and pitching it in hopes that it will one day benefit learners everywhere.</p>
+            </div>
 
-            <p>Thank you for reading!</p>
+            <div class="row">
+                <p class="thankYou">Thank you for reading!</p>
+            </div>
         </div>
+
+
 
         <!-- Check Out Other Works and Stay Connected -->
-        <div class="caseEnding">
+        <div class="caseClosed">
+            <div class="row">
+                <div class="caseHeading text-center">
+                    <h3>Check out my other works:</h3>
+                </div>
+            </div>
 
+
+            <!-- Other work cards -->
+            <div class="card closeCards yellowCard container" style="max-width: 43rem;">
+                <div class="row d-flex justify-content-evenly">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Mobile App Design: The Informed Traveler
+                        </h4>
+
+                        <p class="card-text"><b>Timeline:</b> August - September 2020</p>
+
+                        <p class="card-text"><b>Role:</b>UX Designer</p>
+
+                        <p class="card-text">The traveler’s one-stop app for finding unique traveling experiences</p>
+
+                        <a href="/informedtraveler.html"><button class="yellowButton">See Case Study</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card closeCards purpleCard container" style="max-width: 43rem;">
+                <div class="row d-flex justify-content-evenly">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Website Redesign: Child Care (Florida Department of Children and Families)
+                        </h4>
+
+                        <p class="card-text"><b>Timeline:</b> January - February 2021</p>
+
+                        <p class="card-text"><b>Role:</b> UX Designer, Front-end Developer</p>
+
+                        <p class="card-text">Connecting parents and guardians of children to childcare providers with this online service</p>
+
+                        <a href="/childcare.html"><button class="purpleButton">See Case Study</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="caseHeading text-center">
+                    <h3>Let's stay connected!</h3>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class= "contactInfo d-flex justify-content-evenly">
+                <div class= "email text-center">
+                    <h4>Email Me</h4>
+
+                    <i class= "fas fa-envelope faSize"></i>
+
+                    <br>
+
+                    <p><a href= "mailto:meg.maha@gmail.com">meg.maha@gmail.com</a></p>
+                </div>
+
+                <div class= "linkedIn text-center">
+                    <h4>LinkedIn</h4>
+
+                    <i class= "fab fa-linkedin faSize"></i>
+
+                    <br>
+
+                    <p><a href= "https://www.linkedin.com/in/meghamahapatra" target= "_blank">www.linkedin.com/in/meghamahapatra</a></p>
+                </div>
+        
+            </div>
         </div>
+
+
+
+        <!-- Footer -->
+        <footer class="page-footer container-fluid">
+            <div class="row d-flex justify-content-evenly align-items-center">
+                <div class="col copyright text-center">
+                    <p><i class="far fa-copyright"></i>2020 designed and coded by Megha Mahapatra</p>
+                </div>
+
+                <div class="col socials text-center">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/meghamahapatra" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/megham-cloud" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
     </div>    
 
-    <footer>
-
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/index.js"></script>

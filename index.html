@@ -1,420 +1,271 @@
-    <html>
+<!doctype html>
+<html lang="en">
 
-    <head>
-        <title>Megha Mahapatra - UX/UI Designer</title>
-        <script src = "https://kit.fontawesome.com/27a2d694d4.js" crossorigin = "anonymous"></script>
-        <link rel="stylesheet" href="/css/styles.css" type="text/css">
-    </head>
+<head>
+    <title>Megha Mahapatra - UX/UI Designer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <script src= "https://kit.fontawesome.com/27a2d694d4.js" crossorigin= "anonymous"></script>
 
-    <body>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-        <!-- Side Navigation -->
-        <div class="sideNav">
-            <div class="navItems"></div>
-                <a href="#index.html" id="myLogo"><img src="/images/Logo/Dark_Personal Logo – 1.png" alt=""></a>
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+</head>
 
-                <a href="/index.html#about">About</a>
+<body>
 
-                <a href="/index.html#work">Work</a>
+    <!-- Side Navigation -->
+    <div class="sideNav">
+        <div class="navItems"></div>
+            <a href="#index.html" id="myLogo"><img src="/images/Logo/Dark_Personal Logo – 1.png" alt=""></a>
 
-                <a href="/index.html#skills">Skills</a>
+            <a href="/index.html#about">About</a>
 
-                <a href="/index.html#contact">Contact</a>
+            <a href="/index.html#work">Work</a>
+
+            <a href="/index.html#skills">Skills</a>
+
+            <a href="/index.html#contact">Contact</a>
+        </div>
+
+    </div>
+
+    <!-- Topbar Navigation -->
+    <div class="topNav">
+        <a href="#index.html"><img src="/images/Logo/OptimalMobileLogo.png" alt="" id="myLogoTop"></a>
+
+        <div id="myLinks">
+            <a href="/index.html#about">About</a>
+            
+            <a href="/index.html#work">Work</a>
+            
+            <a href="/index.html#skills">Skills</a>
+            
+            <a href="/index.html#contact">Contact</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>                
+        </a>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class= "container-lg main">
+
+        <!-- About Me Section -->
+        <div class= "row about" id="about">
+            <div class= "col-md-5 offset-md-1 col-lg-4 offset-lg-1 textMe">
+                <h1 id="niceToMeetYou"><b>Nice to meet you, I'm Megha!</b></h1>
+
+                <p id="introParagraph">A UX designer obsessed with creating user friendly designs where logic and creativity meet. Always looking to step into another user's shoes.</p>
+            </div>
+
+            <div class= "col-xs-1 col-sm-1 offset-sm-1 col-md-3 offset-md-1 col-lg-3 offset-lg-2 picMe">
+                <picture>
+
+
+                    <source srcset="/images/Circle/SmallPicMe.png" media="(max-width: 375px)">
+                    <source srcset="/images/Circle/MediumPicMe.png" >
+
+                    <img class="img-responsive" id="picMe" src= "/images/Circle/MediumPicMe.png"
+                    alt= "Image of me smiling">
+                </picture>
+            </div>
+        </div>
+
+        <!-- My Work section -->
+        <div class= "row myWork" id= "work">
+            <h1 class="homeHead"><b>My Work</b></h1>
+
+            <div class= "workCards">
+                <!-- Edubeat -->
+                <div class="card homeCards yellowCard container" style="max-width: 43rem;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Mobile App Design: Edubeat</h4>
+
+                                <p class="card-text"><b>Timeline: </b>September - October 2020,<br>May - June 2021</p>
+
+                                <p class="card-text"><b>Role:</b> UX/UI Designer</p>
+
+                                <p class="card-text">Sing, learn, remember with this mobile music education app by creating study jingles</p>
+
+                                <a href="/edubeat.html"><button class="yellowButton">See Case Study</button></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="/images/EB/EdubeatSplashScreen181x425.png" class="card-img" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Informed Traveler -->
+                <div class="card homeCards purpleCard container" style="max-width: 43rem;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Mobile App Design: The Informed Traveler</h4>
+
+                                <p class="card-text"><b>Timeline:</b> August - September 2020</p>
+
+                                <p class="card-text"><b>Role:</b> UX Designer</p>
+
+                                <p class="card-text">The traveler’s one-stop app for finding unique traveling experiences</p>
+
+                                <a href="/informedtraveler.html"><button class="purpleButton">See Case Study</button></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="/images/IFT/IFTSplashScreen181x425.png" class="card-img" alt="">
+                        </div>
+                    </div>
+                </div>                
+
+                <!-- Child Care -->
+                <div class="card homeCards yellowCard container" style="max-width: 43rem;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Website Redesign: Child Care (Florida Department of Children and Families)</h4>
+
+                                <p class="card-text"><b>Timeline:</b> January - February 2021</p>
+
+                                <p class="card-text"><b>Role:</b> UX Designer, Front-end Developer</p>
+
+                                <p class="card-text">Connecting parents and guardians of children to childcare providers with this online service</p>
+
+                                <a href="/childcare.html"><button class="yellowButton">See Case Study</button></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="/images/FDCF/FDCFHomeScreen271x263.png" class="card-img" alt="">
+                        </div>
+                    </div>
+                </div>                
+
             </div>
 
         </div>
 
-        <!-- Topbar Navigation -->
-        <div class="topNav">
-            <a href="#index.html"><img src="/images/Logo/OptimalMobileLogo.png" alt="" id="myLogoTop"></a>
+        <!-- My Skills section -->
+        <div class= "row mySkills" id="skills">
+            <h1 class="homeHead"><b>My Skills</b></h1>
 
-            <div id="myLinks">
-                <a href="/index.html#about">About</a>
-                
-                <a href="/index.html#work">Work</a>
-                
-                <a href="/index.html#skills">Skills</a>
-                
-                <a href="/index.html#contact">Contact</a>
-            </div>
+            <!-- List of my skills -->
+            <div class= "flexContainer">
+                <div class= "col col-lg-3 offset-lg-1  skillCard">
+                    <img src= "/images/Circle/UserResearch281x281.png" alt="A circular image of a female user persona that I created">
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fas fa-bars"></i>                
-            </a>
-        </div>
+                    <h4>User Research</h4>
 
-
-        <!-- Main Content -->
-        <div class = "main">
-
-            <!-- About Me Section -->
-            <div class = "about">
-                <div class = "textMe">
-                    <h1>Nice to meet you, I'm Megha!</h1>
-
-                    <p>A UX designer obsessed with creating user friendly designs where logic and creativity meet. Always looking to step into another user's shoes.</p>
+                    <p>I utilize user research in order to understand the users, what makes them tick, and what they enjoy. Ultimately, after conducting user interviews and surveys and analyzing the results through means such as affinity diagrams, I create a user persona to really empathize with the users and start to define our problem.</p>
                 </div>
 
-                <div class = "picMe">
-                    <img src = "/images/TransparentMe.png"
-                        alt = "Image of me smiling">
-                </div>
-            </div>
+                <div class= "col col-lg-3 skillCard">
+                    <img src= "/images/Circle/UIDesign281x281.png" alt="A circular image of a style guide I created">
 
-            <!-- My Work section -->
-            <div class = "myWork">
-                <h1>My Work</h1>
+                    <h4>User Interface Design</h4>
 
-                <div class = "workCards">
-                    <!-- Edubeat -->
-                    <div class = "edubeat">
-                        <div class = "edubeatText">
-                            <h3>Mobile App Design: Edubeat</h3>
-
-                            <p>Timeline: September - October 2020, May - June 2021</p>
-
-                            <p>Role: UX/UI Designer</p>
-
-                            <p>Sing, learn, remember with this mobile music education app by creating study jingles</p>
-
-                            <button>See Case Study</button>
-
-                        </div>
-
-                        <div class = "edubeatPhoto">
-                            <img src = "/images/Home - Edubeat Home Screen.png" alt="Edubeat's home screen">
-                        </div>
-                    </div>
-
-                    <!-- The Informed Traveler -->
-                    <div class = "ift">
-                        <div class = "iftText">
-                            <h3>Mobile App Design: The Informed Traveler</h3>
-
-                            <p>Timeline: August - September 2020</p>
-
-                            <p>Role: UX Designer</p>
-
-                            <p>The traveler’s one-stop app for finding unique traveling experiences</p>
-
-                            <button>See Case Study</button>
-
-                        </div>
-
-                        <div class = "iftPhoto">
-                            <img src = "/images/Home - The Informed Traveler Home Screen.png" alt="The Informed Traveler's home screen">
-                        </div>
-                    </div>
-
-                    <!-- The Florida Department of Children and Families -->
-                    <div class = "fdcf">
-                        <div class = "fdcfText">
-                            <h3>Website Redesign: Child Care (Florida Department of Children and Families)</h3>
-
-                            <p>Timeline: January - February 2021</p>
-
-                            <p>Role: UX Designer, Front-end Developer</p>
-
-                            <p>Connecting parents and guardians of children to childcare providers with this online service</p>
-
-                            <button>See Case Study</button>
-
-                        </div>
-
-                        <div class = "fdcfPhoto">
-                            <img src = "/images/Home - FDCF Home Screen.png" alt="The Florida Department of Children and Families' Child Care home page that my team and I coded">
-                        </div>
-
-                    </div>
-
+                    <p>I use my knowledge of color theory and other laws like Gestalt's principles to determine a design that not only looks visually pleasing, but has real intent and meaning behind the visual direction taken. I develop and use a style guide or enhance a preexisting one to determine the look of every design project.</p>
                 </div>
 
-            </div>
+                <div class= "col col-lg-3 skillCard">
+                    <img src= "/images/Circle/Programming281x281.png" alt="A circular image of HTML code that I coded">
 
-            <!-- My Skills section -->
-            <div class = "mySkills">
-                <h1>My Skills</h1>
+                    <h4>Web Development</h4>
 
-                <!-- List of my skills -->
-                <div class = "flexContainer">
-                    <div class = "skillCard">
-                        <img src = "/images/Circle/Circle_Per.png" alt="A circular image of a female user persona that I created">
-
-                        <h3>User Research</h3>
-
-                        <p>I utilize user research in order to understand the users, what makes them tick, and what they enjoy. Ultimately, after conducting user interviews and surveys and analyzing the results through means such as affinity diagrams, I create a user persona to really empathize with the users and start to define our problem.</p>
-                    </div>
-
-                    <div class = "skillCard">
-                        <img src = "/images/Circle/Circle_Style.png" alt="A circular image of a style guide I created">
-
-                        <h3>User Interface Design</h3>
-
-                        <p>I use my knowledge of color theory and other laws like Gestalt's principles to determine a design that not only looks visually pleasing, but has real intent and meaning behind the visual direction taken. I develop and use a style guide or enhance a preexisting one to determine the look of every design project.</p>
-                    </div>
-
-                    <div class = "skillCard">
-                        <img src = "/images/Circle/Circle_Code.png" alt="A circular image of HTML code that I coded">
-
-                        <h3>Web Development</h3>
-
-                        <p>Through my knowledge of HTML, CSS, JavaScript, Jquery, and Bootstrap, I can not only work on the front-end development of websites (like this very website), but I can also understand and communicate with developers who I need to work with when I am taking a UX/UI designer role.</p>
-                    </div>
-
+                    <p>Through my knowledge of HTML, CSS, JavaScript, Jquery, and Bootstrap, I can not only work on the front-end development of websites (like this very website), but I can also understand and communicate with developers who I need to work with when I am taking a UX/UI designer role.</p>
                 </div>
 
             </div>
 
             <!-- Bonus About Me -->
-            <div class = "flexMe">
-                <div class = "aboutMe">
-                    <h3>A Little More About Me</h3>
+            <div class= "row flexMe">
+                <div class= "col offset-lg-2 aboutMe">
+                    <h4>A Little More About Me</h4>
 
                     <p>When I am not sharpening my skills, you can catch me gawking at the stars while strolling around the neighborhood in the early evening. I spend countless hours reading fantasy novels (I am currently losing my mind over Brandon Sanderson's novels, and I love it), and practicing the keyboard.</p>
                 </div>
 
-                <div class = "toolIKnow">
-                    <h3>Tools I Know</h3>
+                <div class= "col offset-lg-1 toolIKnow">
+                    <h4>Tools I Know</h4>
 
-                    <ul>
+                    <ul class="fs-5">
                         <li>Miro</li>
                         <li>Figma</li>
                         <li>inVision</li>
                         <li>Adobe XD</li>
                         <li>Google Drive</li>
                     </ul>
+
+                    <a href="resume/Megha_Resume.docx" target="_blank"><button class="resumeButton">View Resume</button></a>
                 </div>
-
-                <button>View Resume</button>
-
             </div>
+        </div>
 
-            <!-- Contact Me -->
-            <div class = "contactMe">
-                <p>Thank you for your time!</p>
-
-                <p>I'd love to answer any questions you have, please feel free to reach out to me!</p>
-
-                <!-- Contact Information -->
-                <div class = "contactInfo">
-                    <div class = "email">
-                        <h3>Email Me</h3>
-
-                        <i class = "fas fa-envelope"></i>
-
-                        <br>
-
-                        <h3><a href = "mailto:meg.maha@gmail.com">meg.maha@gmail.com</a></h3>
-                    </div>
-
-                    <div class = "phone">
-                        <h3>Call Me</h3>
-
-                        <i class = "fas fa-phone-alt"></i>
-
-                        <h3>863-701-6426</h3>
-                    </div>
-
-                    <div class = "linkedIn">
-                        <h3>LinkedIn</h3>
-
-                        <i class = "fab fa-linkedin"></i>
-
-                        <br>
-
-                        <h3><a href = "https://www.linkedin.com/in/meghamahapatra" target = "_blank">www.linkedin.com/in/meghamahapatra</a></h3>
-                    </div>
             
+
+        <!-- Contact Me -->
+        <div class= "row contactMe" id="contact">
+            <h1 class="contactHeading"><b>Contact Me</b></h1>
+            <p class="text-center">Thank you for your time!</p>
+            <p class="text-center">I'd love to answer any questions you have, please feel free to reach out to me!</p>
+
+            <!-- Contact Information -->
+            <div class= "contactInfo d-flex justify-content-evenly">
+                <div class= "email text-center">
+                    <h4>Email Me</h4>
+
+                    <i class= "fas fa-envelope faSize"></i>
+
+                    <br>
+
+                    <p><a href= "mailto:meg.maha@gmail.com">meg.maha@gmail.com</a></p>
                 </div>
 
+                <div class= "linkedIn text-center">
+                    <h4>LinkedIn</h4>
+
+                    <i class= "fab fa-linkedin faSize"></i>
+
+                    <br>
+
+                    <p><a href= "https://www.linkedin.com/in/meghamahapatra" target= "_blank">www.linkedin.com/in/meghamahapatra</a></p>
+                </div>
+        
             </div>
 
         </div>
 
 
-        <footer>
-            <div class="copyright">
-                <p><i class="far fa-copyright"></i>2020 designed and coded by Megha Mahapatra</p>
+        <!-- Footer -->
+        <footer class="page-footer container-fluid">
+            <div class="row d-flex justify-content-evenly align-items-center">
+                <div class="col copyright text-center">
+                    <p><i class="far fa-copyright"></i>2020 designed and coded by Megha Mahapatra</p>
+                </div>
+
+                <div class="col socials text-center">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/meghamahapatra" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/megham-cloud" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    </ul>
+                </div>
             </div>
-    
-            <div class="socials">
-                <ul>
-                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://github.io"><i class="fab fa-github-square"></i></a></li>
-                </ul>
-            </div>
-            
         </footer>
 
 
+    </div>
 
 
-        <!-- Sidebar navigation -->
-        <!-- <div class="sidenav">
-            <img src="/images/Logo/Dark_Personal Logo – 1.png" alt="My personal logo">
-            <ul>
-                <li><a class="scroll" href="#about">About</a></li>
-                <li><a class="scroll" href="#myWork">Work</a></li>
-                <li><a class="scroll" href="#mySkills">Skills</a></li>
-                <li><a class="scroll" href="#contact">Contact</a></li>
-            </ul>
-        </div> -->
 
-
-        <!-- Main Content -->
-        <!-- <div class="main"> -->
-            <!-- Hero Space with quick info about me -->
-            <!-- <div class="herospace" id="about" name="about">
-                <h1>Nice to meet you, I'm Megha!<img src="/images/TransparentMe.png"
-                        alt="Image of me smiling">
-                </h1>
-                <p>A UX designer obsessed with creating user friendly designs where logic and creativity meet. Always
-                    looking to
-                    step into another user's shoes.</p>
-            </div> -->
-
-            <!-- My Work Section -->
-            <!-- <section class="myWork" id="myWork">
-                <h1>My Work</h1> -->
-                <!-- My Work Section Constructed using CSS Grid -->
-                <!-- I didn't quite use the CSS grid in the way that the directions wanted though... -->
-                <!-- <div class="workGrid"> -->
-                    <!-- The Informed Traveler Card -->
-                    <!-- <div class="card" id="ift"> -->
-                        <!-- Column for description -->
-                        <!-- <div class="description">
-                            <h2>Mobile App Design: <br> The Informed Traveler</h2>
-                            <p>A survey I conducted showed that 41.2% of travelers are dissatisfied with expensive
-                                tourist traps. I knew I had to design an app to fix this problem when competitor
-                                analysis showed that other apps were not scratching this itch.</p>
-                                <a href="ift.html"><button id="yellowFellow">See Case Study</button></a>
-                        </div> -->
-                        <!-- Column for images -->
-                        <!-- <div class="images">
-                            <img src="/images/IFT/Home Page - Explore – Activity-Location – 1.png"
-                                alt="The Informed Traveler View Activity Screen">
-                            <img src="/images/IFT/Framed Sign In.png"
-                                alt="The Informed Traveler Splash Screen">
-                            <img src="/images/IFT/View my reviews – 1.png"
-                                alt="The Informed Traveler Review Screen">
-                        </div>
-
-                    </div> -->
-
-                    <!-- Edubeat Card -->
-                    <!-- <div class="card" id="eb">
-
-                        <div class="description">
-                            <h2>Mobile App Design: Edubeat</h2>
-                            <p>Creating music to study can be a daunting task to do alone, according to 81% of students
-                                surveyed. Some fellow designers and I took matters into our own hands and designed a
-                                song
-                                making
-                                studying tool.</p>
-                            <button id="prettyPink">See Case Study</button>
-                        </div>
-
-                        <div class="images">
-                            <img src="/images/EB/Home.png" alt="Edubeat Home Screen">
-                            <img src="/images/EB/Splash Screen.png" alt="Edubeat Splash Screen">
-                            <img src="/images/EB/Jingle Creation 14 - Stop recording.png"
-                                alt="Edubeat Recording Screen">
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- My Skills Section -->
-            <!-- <section class="mySkills" id="mySkills">
-                <h1>My Skills</h1> -->
-                <!--  My UX Skills section coded using CSS flex -->
-                <!-- <div class="flexContainer">
-                    <div class="skillCard">
-                        <img src="/images/Circle/Circle_Per.png" alt="User Persona">
-                        <h3>User Research</h3>
-                        <p>I utilize user research in order to understand the users, what makes them tick, and what they
-                            enjoy.
-                            Ultimately, after conducting user interviews and surveys and analyzing the results through
-                            means
-                            such as affinity diagrams, I create a user persona to really empathize with the users and
-                            start
-                            to
-                            define our problem.</p>
-                    </div>
-                    <div class="skillCard">
-                        <img src="/images/Circle/Circle_Style.png" alt="Style Guide">
-                        <h3>User Interface Design</h3>
-                        <p>I use my knowledge of color theory and other laws like Gestalt's principles to determine a
-                            design
-                            that not only looks visually pleasing, but has real intent and meaning behind the visual
-                            direction
-                            taken. I develop and use a style guide or enhance a preexisting one to determine the look of
-                            every
-                            design project.</p>
-                    </div>
-                    <div class="skillCard">
-                        <img src="/images/Circle/Circle_Code.png" alt="User Persona">
-                        <h3>Web Development</h3>
-                        <p>Through my knowledge of HTML, CSS, JavaScript, Jquery, and Bootstrap, I can not only work on
-                            the
-                            front-end development of websites (like this very website), but I can also understand and
-                            communicate with developers who I need to work with when I am taking a UX/UI designer role.
-                        </p>
-                    </div>
-                </div>
-                <div class="extraFlex">
-                    <div class="personal">
-                        <h3>A Little More About Me</h3>
-                        <p>When I am not sharpening my skills, you can catch me gawking at the stars while strolling
-                            around
-                            the
-                            neighborhood in the early evening. I spend countless hours reading fantasy novels (I am
-                            currently
-                            losing
-                            my mind over Brandon Sanderson's novels, and I love it), and practicing the keyboard.
-                        </p>
-                    </div>
-                    <div class="tools">
-                        <h3>Tools I Know</h3>
-                        <ul>
-                            <li>Miro</li>
-                            <li>Figma</li>
-                            <li>inVision</li>
-                            <li>Adobe XD</li>
-                            <li>Google Drive</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <a href="/resume/Megha_Resume.docx" target="_blank"><button id="resume">View Resume</button></a>
-            </section> -->
-
-            <!-- Contact Section -->
-            <!-- <section class="contact" id="contact">
-                <h1>Contact Me</h1>
-                <h3 id="thankYou">Thank you for your time!</h3>
-                <p>I'd love to answer any questions you have, please feel free to reach out to me!</p>
-
-                <div class="contactInfo">
-                    <div class="email">
-                        <h3>Email Me</h3>
-                        <i class="fas fa-envelope"></i>
-                        <br>
-                        <h3><a href="mailto:meg.maha@gmail.com">meg.maha@gmail.com</a></h3>
-                    </div>
-
-                    <div class="phone">
-                        <h3>Call Me</h3>
-                        <i class="fas fa-phone-alt"></i>
-                        <h3>863-701-6426</h3>
-                    </div>
-                </div>
-            </section> -->
-
-        <!-- </div>
-
-
-    <footer>
+    <!-- <footer>
         <div class="copyright">
             <p><i class="far fa-copyright"></i>2020 designed and coded by Megha Mahapatra</p>
         </div>
@@ -425,8 +276,252 @@
                 <li><a href="https://github.io"><i class="fab fa-github-square"></i></a></li>
             </ul>
         </div>
+        
     </footer> -->
 
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+
+
+
+    <!-- Sidebar navigation -->
+    <!-- <div class="sidenav">
+        <img src="/images/Logo/Dark_Personal Logo – 1.png" alt="My personal logo">
+        <ul>
+            <li><a class="scroll" href="#about">About</a></li>
+            <li><a class="scroll" href="#myWork">Work</a></li>
+            <li><a class="scroll" href="#mySkills">Skills</a></li>
+            <li><a class="scroll" href="#contact">Contact</a></li>
+        </ul>
+    </div> -->
+
+
+    <!-- Main Content -->
+    <!-- <div class="main"> -->
+        <!-- Hero Space with quick info about me -->
+        <!-- <div class="herospace" id="about" name="about">
+            <h1>Nice to meet you, I'm Megha!<img src="/images/TransparentMe.png"
+                    alt="Image of me smiling">
+            </h1>
+            <p>A UX designer obsessed with creating user friendly designs where logic and creativity meet. Always
+                looking to
+                step into another user's shoes.</p>
+        </div> -->
+
+        <!-- My Work Section -->
+        <!-- <section class="myWork" id="myWork">
+            <h1>My Work</h1> -->
+            <!-- My Work Section Constructed using CSS Grid -->
+            <!-- I didn't quite use the CSS grid in the way that the directions wanted though... -->
+            <!-- <div class="workGrid"> -->
+                <!-- The Informed Traveler Card -->
+                <!-- <div class="card" id="ift"> -->
+                    <!-- Column for description -->
+                    <!-- <div class="description">
+                        <h2>Mobile App Design: <br> The Informed Traveler</h2>
+                        <p>A survey I conducted showed that 41.2% of travelers are dissatisfied with expensive
+                            tourist traps. I knew I had to design an app to fix this problem when competitor
+                            analysis showed that other apps were not scratching this itch.</p>
+                            <a href="ift.html"><button id="yellowFellow">See Case Study</button></a>
+                    </div> -->
+                    <!-- Column for images -->
+                    <!-- <div class="images">
+                        <img src="/images/IFT/Home Page - Explore – Activity-Location – 1.png"
+                            alt="The Informed Traveler View Activity Screen">
+                        <img src="/images/IFT/Framed Sign In.png"
+                            alt="The Informed Traveler Splash Screen">
+                        <img src="/images/IFT/View my reviews – 1.png"
+                            alt="The Informed Traveler Review Screen">
+                    </div>
+
+                </div> -->
+
+                <!-- Edubeat Card -->
+                <!-- <div class="card" id="eb">
+
+                    <div class="description">
+                        <h2>Mobile App Design: Edubeat</h2>
+                        <p>Creating music to study can be a daunting task to do alone, according to 81% of students
+                            surveyed. Some fellow designers and I took matters into our own hands and designed a
+                            song
+                            making
+                            studying tool.</p>
+                        <button id="prettyPink">See Case Study</button>
+                    </div>
+
+                    <div class="images">
+                        <img src="/images/EB/Home.png" alt="Edubeat Home Screen">
+                        <img src="/images/EB/Splash Screen.png" alt="Edubeat Splash Screen">
+                        <img src="/images/EB/Jingle Creation 14 - Stop recording.png"
+                            alt="Edubeat Recording Screen">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- My Skills Section -->
+        <!-- <section class="mySkills" id="mySkills">
+            <h1>My Skills</h1> -->
+            <!--  My UX Skills section coded using CSS flex -->
+            <!-- <div class="flexContainer">
+                <div class="skillCard">
+                    <img src="/images/Circle/Circle_Per.png" alt="User Persona">
+                    <h3>User Research</h3>
+                    <p>I utilize user research in order to understand the users, what makes them tick, and what they
+                        enjoy.
+                        Ultimately, after conducting user interviews and surveys and analyzing the results through
+                        means
+                        such as affinity diagrams, I create a user persona to really empathize with the users and
+                        start
+                        to
+                        define our problem.</p>
+                </div>
+                <div class="skillCard">
+                    <img src="/images/Circle/Circle_Style.png" alt="Style Guide">
+                    <h3>User Interface Design</h3>
+                    <p>I use my knowledge of color theory and other laws like Gestalt's principles to determine a
+                        design
+                        that not only looks visually pleasing, but has real intent and meaning behind the visual
+                        direction
+                        taken. I develop and use a style guide or enhance a preexisting one to determine the look of
+                        every
+                        design project.</p>
+                </div>
+                <div class="skillCard">
+                    <img src="/images/Circle/Circle_Code.png" alt="User Persona">
+                    <h3>Web Development</h3>
+                    <p>Through my knowledge of HTML, CSS, JavaScript, Jquery, and Bootstrap, I can not only work on
+                        the
+                        front-end development of websites (like this very website), but I can also understand and
+                        communicate with developers who I need to work with when I am taking a UX/UI designer role.
+                    </p>
+                </div>
+            </div>
+            <div class="extraFlex">
+                <div class="personal">
+                    <h3>A Little More About Me</h3>
+                    <p>When I am not sharpening my skills, you can catch me gawking at the stars while strolling
+                        around
+                        the
+                        neighborhood in the early evening. I spend countless hours reading fantasy novels (I am
+                        currently
+                        losing
+                        my mind over Brandon Sanderson's novels, and I love it), and practicing the keyboard.
+                    </p>
+                </div>
+                <div class="tools">
+                    <h3>Tools I Know</h3>
+                    <ul>
+                        <li>Miro</li>
+                        <li>Figma</li>
+                        <li>inVision</li>
+                        <li>Adobe XD</li>
+                        <li>Google Drive</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="/resume/Megha_Resume.docx" target="_blank"><button id="resume">View Resume</button></a>
+        </section> -->
+
+        <!-- Contact Section -->
+        <!-- <section class="contact" id="contact">
+            <h1>Contact Me</h1>
+            <h3 id="thankYou">Thank you for your time!</h3>
+            <p>I'd love to answer any questions you have, please feel free to reach out to me!</p>
+
+            <div class="contactInfo">
+                <div class="email">
+                    <h3>Email Me</h3>
+                    <i class="fas fa-envelope"></i>
+                    <br>
+                    <h3><a href="mailto:meg.maha@gmail.com">meg.maha@gmail.com</a></h3>
+                </div>
+
+                <div class="phone">
+                    <h3>Call Me</h3>
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>863-701-6426</h3>
+                </div>
+            </div>
+        </section> -->
+
+    <!-- </div>
+
+
+<footer>
+    <div class="copyright">
+        <p><i class="far fa-copyright"></i>2020 designed and coded by Megha Mahapatra</p>
+    </div>
+
+    <div class="socials">
+        <ul>
+            <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.io"><i class="fab fa-github-square"></i></a></li>
+        </ul>
+    </div>
+</footer> -->
+
+                <!-- Edubeat -->
+                <!-- <div class= "row edubeat">
+                    <div class= "col-lg-4 offset-lg-2 edubeatText">
+                        <h4>Mobile App Design: Edubeat</h4>
+
+                        <p><b>Timeline: </b>September - October 2020,<br>May - June 2021</p>
+
+                        <p><b>Role:</b> UX/UI Designer</p>
+
+                        <p>Sing, learn, remember with this mobile music education app by creating study jingles</p>
+
+                        <button class="yellowButton">See Case Study</button>
+                    </div>
+
+                    <div class= "col-lg-2 offset-lg-2 edubeatPhoto">
+                        <img src= "/images/EB/EdubeatSplashScreen181x425.png" alt="Edubeat's home screen">
+                    </div>
+                </div> -->
+
+                <!-- The Informed Traveler -->
+                <!-- <div class= "row ift">
+                    <div class= "col-lg-4 offset-lg-2 iftText">
+                        <h4>Mobile App Design: The Informed Traveler</h4>
+
+                        <p><b>Timeline:</b> August - September 2020</p>
+
+                        <p><b>Role:</b> UX Designer</p>
+
+                        <p>The traveler’s one-stop app for finding unique traveling experiences</p>
+
+                        <button class="purpleButton">See Case Study</button>
+
+                    </div>
+
+                    <div class= "col-lg-2 offset-lg-2 iftPhoto">
+                        <img src= "/images/IFT/IFTSplashScreen181x425.png" alt="The Informed Traveler's home screen">
+                    </div>
+                </div> -->
+
+                <!-- The Florida Department of Children and Families -->
+                <!-- <div class= "row fdcf">
+                    <div class= "col-lg-4 offset-lg-2 fdcfText">
+                        <h4>Website Redesign: Child Care (Florida Department of Children and Families)</h4>
+
+                        <p><b>Timeline:</b> January - February 2021</p>
+
+                        <p><b>Role:</b> UX Designer, Front-end Developer</p>
+
+                        <p>Connecting parents and guardians of children to childcare providers with this online service</p>
+
+                        <button class="yellowButton">See Case Study</button>
+
+                    </div>
+
+                    <div class= "col-lg-2 offset-lg-2 fdcfPhoto">
+                        <img class="img-responsive" src= "/images/FDCF/FDCFHomeScreen271x263.png" alt="The Florida Department of Children and Families' Child Care home page that my team and I coded">
+                    </div>
+
+                </div> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
