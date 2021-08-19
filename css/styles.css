@@ -15,60 +15,21 @@ p {
     font-size: 18px;
 }
 
-/* sideNav styling */
-.sideNav {
-    height: 100%;
-    width: 200px;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: black;
-    position: fixed;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.sideNav a {
-    padding: 25px 0px;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    display: block;
-}
-
-.sideNav a:hover {
-    background: -webkit-linear-gradient(-70deg, rgb(225, 5, 149), #F0BB1C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#myLogo {
-    padding-bottom: 50px;
-}
-
-
-
-.fa-bars {
-    color: white;
-}
-
-/* topNav styling */
+/* Navigation */
 .topNav {
     overflow: hidden;
     background-color: #000;
     top: 0;
     width: 100%;
-    position: relative;
-    display: none;
+    position: fixed;
+    display: block;
+    z-index: 1;
 }
 
 .topNav #myLinks {
-    display: none;
+    display: block;
     text-align: center;
+    padding-top: 8px;
 }
 
 .topNav a {
@@ -86,7 +47,7 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-    padding-top: 28px;
+    padding-top: 22px;
 }
 
 .topNav a:hover {
@@ -96,12 +57,12 @@ p {
 }
 
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 div.main {
-    margin-left: 200px;
-    margin-right: 0px;
+    /* margin-left: 200px; */
+    margin: 80px 0px 0px 0px;
     padding: 0px;
 }
 
@@ -111,6 +72,18 @@ div.main {
         margin: 0px;
     }
 
+    #about {
+        padding: 10rem 0px;
+    }
+
+    #work, #skills, #contact {
+        padding: 6rem 0px;
+    }
+
+    #contact {
+        padding-bottom: 10rem;
+    }
+
     /* About Section */
     #niceToMeetYou {
         margin-bottom: 20px;
@@ -118,6 +91,14 @@ div.main {
     
     #introParagraph {
         font-size: 24px;
+    }
+
+    .textMe, .picMe {
+        padding: 0;
+    }
+
+    .picMe {
+        padding-left: 50px;
     }
 
     .homeHead {
@@ -209,7 +190,6 @@ div.main {
     .flexContainer {
         display: flex;
         margin-bottom: 75px;
-        padding-left: 105px;
     }
 
     .skillCard h4 {
@@ -356,6 +336,8 @@ div.main {
         text-align: center;
     }
 
+    /* Prototype */
+
     /* Connect */
     .thankYou {
         font-family: 'Catamaran', sans-serif;
@@ -420,50 +402,49 @@ div.main {
     }
 
 /* Responsiveness */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
 
     /* Home Page */
         /* About section */
-        .about {
-            padding-top: 8rem;
-            padding-bottom: 8rem;
-        }    
-
-        .myWork, .mySkills, .contactMe {
-            padding-top: 6rem;
-            padding-bottom: 6rem;
+        #about {
+            padding: 8rem 0px;
         }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    /* Navigation */
-    .sideNav {
-        width: 10rem;
-    }
-
-    div.main {
-        margin-left: 10rem;
-    }
 
     /* Home Page */
         /* About section */
-        .about {
-            padding-top: 100px;
-            padding-bottom: 100px;
+        #about {
+            padding: 7rem 0;
         }  
+}
+
+@media screen and (min-width: 768px) {
+    .topNav a.icon {
+        display: none;
+    }
+
+    .topNav a {
+        display: inline-block;
+    }
+
+    #myLinks {
+        display: inline-block;
+        float: right;
+    }
+
+    #myLinks a {
+        float: left;
+    }
 }
 
 @media screen and (max-width: 768px) {
     /*  Navigation */
-    .sideNav {
-      display: none;
+    .topNav #myLinks {
+        padding-top: 0px;
+        padding-bottom: 25px;
     }
 
-    .topNav {
-        display: block;
-    }
-    div.main {
-        margin-left: 0px;
-    }
 }
 
 
@@ -899,3 +880,152 @@ font-family: 'Open Sans', sans-serif;
     }
 
 } */
+
+
+
+
+/* sideNav styling */
+/* .sideNav {
+    height: 100%;
+    width: 200px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: black;
+    position: fixed;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sideNav a {
+    padding: 25px 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    display: block;
+}
+
+.sideNav a:hover {
+    background: -webkit-linear-gradient(-70deg, rgb(225, 5, 149), #F0BB1C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#myLogo {
+    padding-bottom: 50px;
+}
+
+.fa-bars {
+    color: white;
+} */
+
+/* topNav styling */
+/* .topNav {
+    overflow: hidden;
+    background-color: #000;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: none;
+}
+
+.topNav #myLinks {
+    display: none;
+    text-align: center;
+}
+
+.topNav a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 24px;
+    display: block;
+}
+
+.topNav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 28px;
+}
+
+.topNav a:hover {
+    background: -webkit-linear-gradient(-85deg, rgb(225, 5, 149), #F0BB1C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+    /* .sideNav {
+      display: none;
+    } */
+
+    /* #myLinks {
+        display: none;
+    }
+
+    .topNav a.icon {
+        display: block;
+    }
+
+    div.main {
+        margin-left: 0px;
+    } */
+
+    /* .topNav.responsive #myLinks {
+        display: none;
+    }
+
+    .topNav.responsive {
+        overflow: hidden;
+        background-color: #000;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        display: block;
+        z-index: 1;
+    } */
+    
+    /* .topNav #myLinks {
+        display: block;
+        text-align: center;
+    }
+    
+    .topNav a {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        padding: 14px 16px;
+        font-size: 24px;
+        display: block;
+    }
+    
+    .topNav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 22px;
+    }
+    
+    .topNav a:hover {
+        background: -webkit-linear-gradient(-85deg, rgb(225, 5, 149), #F0BB1C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } */
+
+        /* Navigation */
+    /* .sideNav {
+        width: 10rem;
+    } */
+
+    /* div.main {
+        margin-left: 10rem;
+    } */
