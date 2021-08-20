@@ -410,13 +410,37 @@ div.main {
             padding: 8rem 0px;
         }
 }
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     /* Home Page */
+        .homeHead {
+            margin-bottom: 75px;
+        }
+
         /* About section */
         #about {
             padding: 7rem 0;
         }  
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    /* Home Page */
+        /* About section */
+        #about {
+            padding: 5rem 0;
+        }
+
+        .mediumMe {
+            margin-top: 25px;
+        }
+
+        /* My Skills */
+        .toolIKnow {
+            margin-top: 50px;
+        }
 }
 
 @media screen and (min-width: 768px) {
@@ -444,6 +468,32 @@ div.main {
         padding-top: 0px;
         padding-bottom: 25px;
     }
+
+    /* Home Screen */    
+        /* Contact */
+        .linkedIn {
+            margin-top: 50px;
+        }
+}
+
+@media screen and (max-width: 576px) {
+    /* Home Screen */
+        /* About */
+        #about {
+            padding: 5rem 0;
+        }
+
+        /* My Work */
+
+        /* My Skills */
+        .toolIKnow {
+            margin-top: 50px;
+        }
+
+        /* Contact */
+        .linkedIn {
+            margin-top: 50px;
+        }
 
 }
 

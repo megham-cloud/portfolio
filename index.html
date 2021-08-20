@@ -17,7 +17,7 @@
 
     <!-- Topbar Navigation -->
     <div class="topNav">
-        <a href="#index.html"><img src="/images/Logo/OptimalMobileLogo.png" alt="" id="myLogoTop"></a>
+        <a href="#index.html"><img src="/images/Logo/svglogomedium.svg" alt="" id="myLogoTop"></a>
 
         <div id="myLinks">
             <a href="/index.html#about">About</a>
@@ -40,20 +40,23 @@
 
         <!-- About Me Section -->
         <div class= "row about" id="about">
-            <div class= "col-sm-10 offset-sm-1 col-md-4 offset-md-1 col-lg-4 offset-lg-2 textMe">
+            <div class= "col-10 offset-1 col-xs-10 offset-xs-1 col-sm-10 offset-sm-1 col-md-4 offset-md-1 col-lg-4 offset-lg-2 textMe">
                 <h1 id="niceToMeetYou"><b>Nice to meet you, I'm Megha!</b></h1>
 
                 <p id="introParagraph">A UX designer obsessed with creating user friendly designs where logic and creativity meet. Always looking to step into another user's shoes.</p>
             </div>
 
-            <div class= "col-xs-1 col-sm-12 text-sm-right col-md-2 offset-md-1 col-lg-3 offset-lg-1 picMe">
+            <!-- For screens < 768px -->
+            <div class="d-flex justify-content-center d-block d-md-none mediumMe">
                 <picture>
-                    <source srcset="/images/Circle/SmallPicMe.png" media="(max-width: 375px)">
-                    <source srcset="/images/Circle/MediumPicMe.png" >
-
-                    <img class="img-responsive" id="picMe" src= "/images/Circle/MediumPicMe.png"
-                    alt= "Image of me smiling">
+                    <source media="(min-width:576px)" srcset="/images/Circle/mediumpicme.svg">
+                    <img src="/images/Circle/smallpicme.svg" alt="Image of me smiling" class="img-responsive">       
                 </picture>
+            </div>
+            <!-- For screens >= 768px -->
+            <div class= "d-none d-md-block col-md-2 offset-md-1 col-lg-3 offset-lg-1 picMe">
+                <img class="img-responsive" id="picMe" src= "/images/Circle/MediumPicMe.png"
+                alt= "Image of me smiling">
             </div>
         </div>
 
@@ -80,7 +83,10 @@
                         </div>
 
                         <div class="col-md-4 card-body">
-                            <img src="/images/EB/EdubeatSplashScreen181x425.png" class="card-img" alt="">
+                            <picture>
+                                <source media="(max-width:576px)" srcset="/images/edubeatsplashscreen80x177.svg" class="card-img img-responsive">
+                                <img src="/images/edubeatsplashscreen181x425.svg" class="card-img" alt="">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -103,7 +109,10 @@
                         </div>
 
                         <div class="col-md-4 card-body">
-                            <img src="/images/IFT/IFTSplashScreen181x425.png" class="card-img" alt="">
+                            <picture>
+                                <source media="(max-width:576px)" srcset="/images/iftsplashscreen80x177.svg" class="card-img img-responsive">
+                                <img src="/images/iftsplashscreen181x425.svg" class="card-img img-responsive" alt="">
+                            </picture>
                         </div>
                     </div>
                 </div>                
@@ -125,8 +134,11 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 card-body">
-                            <img src="/images/FDCF/CCMobileSplashScreen181x425 – 1.png" class="card-img" alt="">
+                        <div class="col-sm-1 col-md-4 card-body">
+                            <picture>
+                                <source media="(max-width:576px)" srcset="/images/ccmobilesplashscreen80x177.svg" class="fdcfHomeImg card-img img-responsive">
+                                <img src="/images/ccmobilesplashscreen181x425___1.svg" class="card-img img-responsive" alt="">
+                            </picture>
                         </div>
                     </div>
                 </div>                
@@ -142,7 +154,10 @@
             <!-- List of my skills -->
             <div class= "flexContainer row d-flex justify-content-center">
                 <div class= "col-md-7 col-lg-3 skillCard">
-                    <img src= "/images/Circle/UserResearch281x281.png" alt="A circular image of a female user persona that I created">
+                    <picture>
+                        <img src= "/images/Circle/userresearch281x281.svg" alt="A circular image of a female user persona that I created">                        
+                    </picture>
+
 
                     <h4>User Research</h4>
 
@@ -150,7 +165,9 @@
                 </div>
 
                 <div class= "col-md-7 col-lg-3 skillCard">
-                    <img src= "/images/Circle/UIDesign281x281.png" alt="A circular image of a style guide I created">
+                    <picture>
+                        <img src= "/images/Circle/uidesign281x281.svg" alt="A circular image of a style guide I created">
+                    </picture>
 
                     <h4>User Interface Design</h4>
 
@@ -158,7 +175,10 @@
                 </div>
 
                 <div class= "col-md-7 col-lg-3 skillCard">
-                    <img src= "/images/Circle/Programming281x281.png" alt="A circular image of HTML code that I coded">
+                    <picture>
+                        <img src= "/images/Circle/programming281x281.svg" alt="A circular image of HTML code that I coded">                        
+                    </picture>
+
 
                     <h4>Web Development</h4>
 
@@ -169,13 +189,13 @@
 
             <!-- Bonus About Me -->
             <div class= "row flexMe">
-                <div class= "col col-md-4 offset-md-2 col-lg-5 offset-lg-2 aboutMe">
+                <div class= "col col-10 offset-1 col-md-4 offset-md-2 col-lg-5 offset-lg-2 aboutMe">
                     <h4>A Little More About Me</h4>
 
                     <p>When I am not sharpening my skills, you can catch me gawking at the stars while strolling around the neighborhood in the early evening. I spend countless hours reading fantasy novels (I am currently losing my mind over Brandon Sanderson's novels, and I love it), and practicing the keyboard.</p>
                 </div>
 
-                <div class= "col col-md-5 offset-md-1 col-lg-4 offset-lg-1 toolIKnow">
+                <div class= "col col-10 offset-1 col-sm-4 offset-sm-4 col-md-5 offset-md-1 col-lg-4 offset-lg-1 toolIKnow">
                     <h4>Tools I Know</h4>
 
                     <ul class="fs-5">
@@ -195,13 +215,13 @@
 
         <!-- Contact Me -->
         <div class= "row contactMe" id="contact">
-            <h1 class="contactHeading"><b>Contact Me</b></h1>
-            <p class="text-center">Thank you for your time!</p>
-            <p class="text-center">I'd love to answer any questions you have, please feel free to reach out to me!</p>
+            <h1 class="contactHeading col-12"><b>Contact Me</b></h1>
+            <p class="text-center col-12">Thank you for your time!</p>
+            <p class="text-center col-12">I'd love to answer any questions you have, please feel free to reach out to me!</p>
 
             <!-- Contact Information -->
-            <div class= "contactInfo d-flex justify-content-evenly">
-                <div class= "email text-center">
+            <div class= "row contactInfo">
+                <div class= "email text-center col-12 col-md-6">
                     <h4>Email Me</h4>
 
                     <i class= "fas fa-envelope faSize"></i>
@@ -211,7 +231,7 @@
                     <p><a href= "mailto:meg.maha@gmail.com">meg.maha@gmail.com</a></p>
                 </div>
 
-                <div class= "linkedIn text-center">
+                <div class= "linkedIn text-center col-12 col-md-6">
                     <h4>LinkedIn</h4>
 
                     <i class= "fab fa-linkedin faSize"></i>
