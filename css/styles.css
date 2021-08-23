@@ -66,6 +66,23 @@ div.main {
     padding: 0px;
 }
 
+/* 404 page */
+.page404 h1 {
+    margin-top: 75px;    
+}
+
+.page404 h4 {
+    margin-top: 60px;    
+}
+
+.page404 a {
+    color: black;
+}
+
+.caseSpace404 {
+    margin-top: 25px;
+}
+
 /* Home Page */
 
     .about, .myWork, .mySkills, .contactMe {
