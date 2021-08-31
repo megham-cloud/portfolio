@@ -288,9 +288,6 @@
                 <img class="col-10 col-lg-8" src="/portfolio/images/FDCF/child_care_home_v4___2.svg" alt="The final version of the Child Care section home page">
                 <a href="https://xd.adobe.com/embed/dbf9f655-b00b-4238-a89c-a43ea5bb0a9f-8eaa/?fullscreen" target="_blank"><p class="caption col-10 offset-1">Click here to view the final clickable prototype made in Adobe XD 
                 </p></a>
-
-                <a href="https://childcareproject-fdcf.github.io/child-care-repo/" target="_blank"><p class="caption col-10 offset-1">Click here to view the final coded prototype 
-                </p></a>
                 
                 <!-- <div class="ccprototype col-lg-10 text-center">
                     <iframe max-width="500px" max-height="200px" src="https://xd.adobe.com/embed/dbf9f655-b00b-4238-a89c-a43ea5bb0a9f-8eaa/?fullscreen" frameborder="0" allowfullscreen></iframe>
@@ -305,7 +302,74 @@
                 </div> -->
             </div>
         </div>
+        
+        
+        <!-- Coding -->
+        <div class="coding">
+            <div class="row ccHeadingBox headingBox">
+                <div class="text-center caseHeading">
+                    <h3>Coding</h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <p>As a test for our coding knowledge and to build our understanding of what developers deal with when they receive our designs, we coded part of our hi-fi prototype. We only coded three pages due to time constraints and our limited coding knowledge; this meant not coding any forms or tables.</p>
+                
+                <p>With these limitations in place, we chose to code the finding of a childcare provider using the search box on the home page. The three pages we would have to code are the home page, search results page, and the synopsis page for the childcare provider. I tackled the home page and the synopsis page while my teammate handled the search results page. You can find the code we wrote here on Github.</p>
+                
+                <p>Even with the help of Bootstrap's intuitive framework, we struggled with creating the website. The most difficult part of the coding process was understanding how Github Pages operates. When we first published our website, Github would not recognize our CSS file.</p>
+                
+                <p>Previously, to apply the CSS styling, we had written the following in the head of our HTML code:</p>
+                
+                <pre><code>&lt;link&gt; href="/css/styles.css" rel="stylesheet"&gt;</code></pre>
+                
+                <p>This above code resulted in the following page:</p>
+            </div>    
+            
+            <!-- Bare HTML page -->
+            <div class="ccJustHTML row d-flex justify-content-evenly">
+                <img class="col-10 col-lg-8" src="" alt="The Child Care section's home page without any images or styling displayed. Only the headings and text are visible.">
 
+                <p class="caption col-10 col-lg-8">Only the headings and text of our home page is visible since the CSS is not linked properly.</p>
+            </div>            
+            
+            <div class="row">
+                <p>After checking our code by using Google Chrome's DevTools, we realized that the issue was how we referenced the links to the CSS file in our HTML code. Changing the CSS styling amounted to understanding Github's way of recognizing file structure.</p>
+                
+                <p>We thought that since our CSS folder lives in the same child-care-repo folder as our HTML pages, Github can find our CSS folder. However, since Github starts looking for sources starting from megham-cloud.github.io, Github wanted the CSS folder explicitly listed under the child-care-repo folder in the code.</p>
+            </div>
+            
+            <!-- Showing Chrome's DevTools -->
+            <div class="ccDevTools row d-flex justify-content-evenly">
+                <img class="col-10 col-lg-8" src="" alt="The folder structure of my site">
+                
+                <p class="caption col-10 col-lg-8">Github thinks it will find our css folder in the megham-cloud.github.io folder, but Github needs to go into the child-care-repo folder before accessing our css folder</p>
+            </div>
+            
+            <div class="row">
+                <p>To fix our issue, we must have the following code in the head instead:</p>
+                
+                <pre><code>&lt;link&gt; href="/child-care-repo/css/styles.css" rel="stylesheet"&gt;</code></pre>
+                
+                <p>Now we have the CSS styling applied:</p>
+            </div>
+            
+            <!-- CSS styling fixed! -->
+            <div class="ccCSSFixed row d-flex justify-content-evenly">
+                <img class="col-10 col-lg-8" src="" alt="The Child Care section's home page with images and styling displayed">
+                
+                <p class="caption col-10 col-lg-8">Now all styling can be visible on the home page!</p>
+            </div>
+            
+            <div class="row">
+                <p>Though this may seem like a simple error, it was so easy to overlook the solution. We spent so much time pulling our hair out only to find the problem in a matter of minutes. I cannot begin to imagine how much frustration developers must feel when they encounter a roadblock, and I have so much respect for those that persevere until they find a way around it.</p>
+            
+                <p>Though we had a few hiccups along the way, we finally had our coded prototype:</p>
+                
+                <a href="https://childcareproject-fdcf.github.io/child-care-repo/" target="_blank"><p class="caption col-10 offset-1">Click here to view the final coded prototype 
+                </p></a>
+            </div>
+        </div>
 
         
         <!-- Reflection -->
