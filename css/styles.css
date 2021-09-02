@@ -347,6 +347,10 @@ div.main {
         color: black;
     }
 
+    .headline {
+        font-family: 'Catamaran', sans-serif;         
+    }    
+
     /* User Research */
     .caseList {
         padding-left: 50px;
