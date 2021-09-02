@@ -326,6 +326,27 @@ div.main {
         font-weight: bolder;
     }
 
+    /* Table of Contents */
+    .tocFirst {
+        padding-left: 25px;
+    }
+
+    .tocSecond {
+        padding-left: 50px;
+    }
+
+    .tocSecond a{
+        font-size: 18px;
+    }
+
+    .toc ul {
+        list-style-type: none;
+    }
+
+    .toc a {
+        color: black;
+    }
+
     /* User Research */
     .caseList {
         padding-left: 50px;
