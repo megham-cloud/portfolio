@@ -5,23 +5,6 @@ $("body").css("display", "none");
 $(document).ready(function () {
     // Fade in page on load
     $("body").fadeIn(1000);
-
-    // Smooth scroll 
-    $(".scroll").on("click", function (event) {
-
-        if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash;
-
-            $("html, body").animate({
-                scrollTop: $(hash).offset().top - 96
-            }, 800, function () {
-                window.location.hash = hash;
-            });
-        }
-    }); 
-
 });
 
 // Responsive Top Navigation
@@ -44,6 +27,34 @@ mql.onchange = function(e) {
         document.getElementById("myLinks").style.display = "none";
     } else {
         document.getElementById("myLinks").style.display = "block";
+    }
+}
+
+// Back to Top Button
+var ebButton = document.getElementById("backtoEB");
+var iftButton = document.getElementById("backtoIFT");
+var ccButton = document.getElementById("backtoCC");
+
+// When the user scrolls past "In this case study"
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var scrollTop = $(window).scrollTop(),
+        ebOffset = $("#backtoEB").elementOffset(),
+        ebDistance = (ebOffset - scrollTop),
+        iftOffset = $("#backtoIFT").elementOffset(),
+        iftDistance = (iftOffset - scrollTop),
+        ccOffset = $("backtoCC").elementOffset(),
+        ccDistance = (ccOffset - scrollTop);
+    
+    if (ebDistance < 0 || iftDistance < 0 || ccDistance < 0) {
+        ebButton.style.display = "block";
+        iftButton.style.display = "block";
+        ccButton.style.display = "block";
+    } else {
+        ebButton.style.display = "none";
+        iftButton.style.display = "none";
+        ccButton.style.display = "none";
     }
 }
 
