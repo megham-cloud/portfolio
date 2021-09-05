@@ -40,11 +40,11 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     var scrollTop = $(window).scrollTop(),
-        ebOffset = $("#backtoEB").elementOffset(),
+        ebOffset = $("#inEB").elementOffset(),
         ebDistance = (ebOffset - scrollTop),
-        iftOffset = $("#backtoIFT").elementOffset(),
+        iftOffset = $("#inIFT").elementOffset(),
         iftDistance = (iftOffset - scrollTop),
-        ccOffset = $("backtoCC").elementOffset(),
+        ccOffset = $("#inCC").elementOffset(),
         ccDistance = (ccOffset - scrollTop);
     
     if (ebDistance < 0 || iftDistance < 0 || ccDistance < 0) {
