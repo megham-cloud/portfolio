@@ -465,6 +465,11 @@ div.main {
         background-color: #FFDD87;
     }
 
+    #chromeFilesImg {
+        max-width: 230px;
+        max-height: 154px;
+    }
+
 /* Responsiveness */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
