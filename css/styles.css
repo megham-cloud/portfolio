@@ -339,8 +339,12 @@ div.main {
         padding-left: 50px;
     }
 
-    .tocSecond a{
+    .tocSecond a {
         font-size: 18px;
+    }
+
+    .tocSecond li {
+        margin-bottom: 16px;    
     }
 
     .toc ul {
@@ -388,6 +392,7 @@ div.main {
         font-size: 18px;
         text-align: center;
         margin-bottom: 50px;
+        margin-top: 16px;
     }    
 
     .userQuotes {
@@ -447,6 +452,17 @@ div.main {
         margin-top: 25px;
     }
 
+    /* Spacing */
+        /* Heading */
+        #whyEB, #ebLatest, #ebMainNav, #ebUserFlow, #ebMapping {
+            margin-top: 50px;    
+        }
+
+        /* Images */
+        .ebProcess, .ebEmpathyMap, .ebLowTestingEx, .uiInspiration, .uiStyleGuide, .phoneDisplay, .youtubeVideo {
+            margin-top: 25px;    
+        }
+
 
 /* The Informed Traveler Page */
     /* Introduction */
@@ -459,6 +475,21 @@ div.main {
         background-color: #ABD2DF;
     }
 
+    /* Spacing */
+        /* Heading */
+        #whyIFT, #iftInterSurvResults, #iftFeatures, #iftFlow, #iftHigh {
+            margin-top: 50px;    
+        }
+
+        /* Images */
+        .iftProcess, .iftPersona, .iftPaperPrototypes, .iftFinal {
+            margin-top: 25px;    
+        }
+
+        .iftJourneyMap {
+            margin-top: 9px;    
+        }
+
 /* Child Care Page */
     /* User Research */
     .ccHeadingBox {
@@ -469,6 +500,17 @@ div.main {
         max-width: 230px;
         max-height: 154px;
     }
+
+    /* Spacing */
+        /* Heading */
+        #whyCC, #ccProblems, #ccCodedPrototype {
+            margin-top: 50px;    
+        }
+
+        /* Images */
+        .ccRedlining, .ccProcess {
+            margin-top: 25px;    
+        }
 
 /* Responsiveness */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -565,586 +607,3 @@ div.main {
         }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-/* .sidenav {
-    width: 15%;
-    height: 100%;
-    background-color:black;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.sidenav img {
-    text-align: center;
-    margin: 150px auto 52px auto;
-}
-
-.sidenav ul li {
-    list-style-type: none;
-    margin-bottom: 52px;
-}
-
-.sidenav ul a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.sidenav a:hover {
-    background: -webkit-linear-gradient(-70deg, rgb(225, 5, 149), #F0BB1C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.main {
-    margin-left: 15%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.nav {
-    padding-inline-left: 40px;   
-}    
-
-/* weird linking issues? */
-/* Hero space styling */
-/* .herospace {
-    height: 60vh;
-    padding-top: 140px;
-    padding-left: 10%;
-    display: block;
-}
-
-.herospace p {
-    width: 34%;
-    font-size: 24px;
-}
-
-.herospace img {
-    position: absolute;
-    top: 100px;
-    right: 0px;
-    margin-right: 10%;
-    transform: scale(0.7, 0.7);
-} */ 
-
-/* My Work Styling */
-/* .myWork {
-    background-color: #FAFAFA;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-.myWork h1 {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.workGrid {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.card {
-    height: 50vh;
-    border-radius: 0.625rem;
-    margin-bottom: 5rem;
-    display: flex;
-}
-
-.description {
-    margin-left: 7%;
-    object-fit: contain;
-}
-
-.description h2 {
-    margin-left: 0;
-    margin-top: 3.5rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.description p {
-    margin-bottom: 2rem;
-}
-
-.images {
-    width: 50%;
-    margin-top: 7%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.images img {
-    object-fit: contain;
-    height: 80%;
-} */
-
-/* The Informed Traveler Specific Styling */
-/* #ift {
-    background-color: #FFFEEA;
-    border: 3px solid #F2BD1D;
-}
-
-#yellowFellow {
-    width: 13rem;
-    height: 4rem;
-    background-image: linear-gradient(#FDF8A3, #fcf462);
-    border: 2px solid #F2BD1D;
-    border-radius: 16px;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: black;
-}
-
-#yellowFellow a {
-    text-decoration: none;
-    color: black;
-}
-
-#yellowFellow:hover {
-    background-image: linear-gradient(#fcf462, #FDF8A3);
-    box-shadow: 1px 1px 1px #000000;
-} */
-
-
-/* Edubeat Specific Styling */
-/* #eb {
-    background-color: #FFE7ED;
-    border: 3px solid #9E0067;
-}
-
-#prettyPink {
-    width: 13rem;
-    height: 4rem;
-    background-image: linear-gradient(#f7b0c4, #f16d92);
-    border: 2px solid #9E0067;
-    border-radius: 16px;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: black;
-}
-
-#prettyPink:hover {
-    background-image: linear-gradient(#f16d92, #f7b0c4);
-    box-shadow: 1px 1px 1px #000000;
-}
-
-@keyframes move {
-    0% {transform: translateY(0px);}
-    100% {transform: translateY(-5px);}
-} */
-
-/* My Skills styling */
-/* .mySkills {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 75px;
-    padding-bottom: 75px;
-}
-
-.mySkills h1 {
-    text-align: center;
-    margin-bottom: 70px;
-}
-
-.flexContainer {
-    display: flex;
-    margin-bottom: 75px;
-}
-
-.skillCard {
-    width: 33%;
-}
-
-.skillCard h3 {
-    text-align: center;
-}
-
-.skillCard p {
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.skillCard img {
-    transform: scale(0.8, 0.8);
-    border: 3px solid black;
-    border-radius: 100%;
-    width: 100%;
-}
-
-.extraFlex {
-    display: flex;
-}
-
-.personal {
-    width: 50%;
-}
-
-.tools {
-    width: 50%;
-    text-align: center;
-}
-
-.tools ul {
-    margin-bottom: 25px;
-}
-
-.tools li {
-    text-align: left !important;
-    font-weight: bold;
-    list-style-type: none;
-    padding-left: 37%;
-}
-
-
-#resume {
-    color: white;
-    font-weight: bold;
-    background-image: linear-gradient(#595959, #000000);
-    border: 1px solid black;
-    border-radius: 16px;
-    width: 50%;
-    height: 50px;
-    margin-left: 25%;
-    margin-top: 50px;
-}
-
-#resume:hover {
-    background-image: linear-gradient(#000000, #595959);
-    box-shadow: 1px 1px 1px #000000;
-} */
-
-/* Contact Me Styling */
-/* .contact {
-    background-color: #FAFAFA;
-    padding-top: 4rem;
-    padding-bottom: 16rem;
-}
-
-.contact i {
-    transform: scale(2, 2);
-}
-
-.contact h1 {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.contact a {
-    color: black;
-}
-
-.contact a:hover {
-    background: -webkit-linear-gradient(-70deg, rgb(225, 5, 149), #F0BB1C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#thankYou {
-    text-align: center;
-}
-
-.contact p {
-    margin-top: 50px;
-    margin-left: 15%;
-    margin-bottom: 50px;
-}
-
-.contactInfo {
-    margin-left: 15%;
-    display: flex;
-    text-align: center;
-    margin-right: 15%;
-}
-
-.email {
-    width: 50%;
-}
-
-.phone {
-    width: 50%;
-} */
-
-
-/* Footer Styling */
-/* footer {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 3;
-}
-
-footer ul {
-    list-style-type: none;
-}
-footer ul li {
-    display: inline;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}  */
-
-/* Informed Traveler Case Study Page */
-/* .hero-space {
-    height: 90%;
-    padding-top: 5em;
-}
-
-.hero-content {
-    background-color: #FFFFFFE6;
-    border-radius: 10px;
-    padding: 1em 1.5em;
-    width: 50%;
-}
-
-#ift-hero-image {
-    background-image: url(/images/IFT/IFT-Hero\ Image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.logo-case {
-    transform: scale(0.7, 0.7);
-}
-
-.intro-description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.ift-section {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding: 3em 2em;
-}
-
-.ift-section h3 {
-    text-align: center;
-    margin-bottom: 2em;
-}
-
-.ift-section p {
-    margin-bottom: 0.75em;
-}
-
-.ift-section h4 {
-    margin-bottom: 1em;
-}
-
-.ift-problem {
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-
-.ift-user, .ift-ideation, .ift-reflection{
-    background-color: #FAFAFA;
-}
-
-.survey-image {
-    transform: scale(0.75, 0.75);
-}
-
-.ift-more-studies {
-    margin-bottom: 2em !important;
-}
-
-.end {
-    margin-bottom: 5em;
-}
-
-iframe {
-    margin: 0px auto 2em auto;
-} */
-/* FOR REFERENCE ************************************************* 
-font-family: 'Catamaran', sans-serif; 
-font-family: 'Open Sans', sans-serif;
-*/
-
-/* @media only screen and (max-width: 600px) {
-    .sidenav {
-        width: 100%;
-        height: 10%;
-        display: flex;
-    }
-
-    .sidenav img {
-        margin: 0 auto;
-    }
-
-    .sidenav ul {
-        display: none;
-    }
-
-} */
-
-
-
-
-/* sideNav styling */
-/* .sideNav {
-    height: 100%;
-    width: 200px;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: black;
-    position: fixed;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.sideNav a {
-    padding: 25px 0px;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    display: block;
-}
-
-.sideNav a:hover {
-    background: -webkit-linear-gradient(-70deg, rgb(225, 5, 149), #F0BB1C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#myLogo {
-    padding-bottom: 50px;
-}
-
-.fa-bars {
-    color: white;
-} */
-
-/* topNav styling */
-/* .topNav {
-    overflow: hidden;
-    background-color: #000;
-    top: 0;
-    width: 100%;
-    position: fixed;
-    display: none;
-}
-
-.topNav #myLinks {
-    display: none;
-    text-align: center;
-}
-
-.topNav a {
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    padding: 14px 16px;
-    font-size: 24px;
-    display: block;
-}
-
-.topNav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-top: 28px;
-}
-
-.topNav a:hover {
-    background: -webkit-linear-gradient(-85deg, rgb(225, 5, 149), #F0BB1C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-
-    /* .sideNav {
-      display: none;
-    } */
-
-    /* #myLinks {
-        display: none;
-    }
-
-    .topNav a.icon {
-        display: block;
-    }
-
-    div.main {
-        margin-left: 0px;
-    } */
-
-    /* .topNav.responsive #myLinks {
-        display: none;
-    }
-
-    .topNav.responsive {
-        overflow: hidden;
-        background-color: #000;
-        top: 0;
-        width: 100%;
-        position: fixed;
-        display: block;
-        z-index: 1;
-    } */
-    
-    /* .topNav #myLinks {
-        display: block;
-        text-align: center;
-    }
-    
-    .topNav a {
-        color: white;
-        font-family: 'Open Sans', sans-serif;
-        text-decoration: none;
-        padding: 14px 16px;
-        font-size: 24px;
-        display: block;
-    }
-    
-    .topNav a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding-top: 22px;
-    }
-    
-    .topNav a:hover {
-        background: -webkit-linear-gradient(-85deg, rgb(225, 5, 149), #F0BB1C);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    } */
-
-        /* Navigation */
-    /* .sideNav {
-        width: 10rem;
-    } */
-
-    /* div.main {
-        margin-left: 10rem;
-    } */
