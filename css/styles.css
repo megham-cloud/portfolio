@@ -460,7 +460,11 @@ div.main {
 
         /* Images */
         .ebProcess, .ebEmpathyMap, .ebLowTestingEx, .uiInspiration, .uiStyleGuide, .phoneDisplay, .youtubeVideo {
-            margin-top: 25px;    
+            margin-top: 25px;
+        }
+
+        .ebJourneyMap {
+            margin-bottom: 25px;    
         }
 
 
@@ -482,7 +486,7 @@ div.main {
         }
 
         /* Images */
-        .iftProcess, .iftPersona, .iftPaperPrototypes, .iftFinal {
+        .iftProcess, .iftPersona, .iftPaperPrototypes, .iftFinal, .iftValueProp, .iftFeaturePrioritization {
             margin-top: 25px;    
         }
 
@@ -510,6 +514,10 @@ div.main {
         /* Images */
         .ccRedlining, .ccProcess {
             margin-top: 25px;    
+        }
+
+        .ccStyle {
+            margin-bottom: 50px;    
         }
 
 /* Responsiveness */
